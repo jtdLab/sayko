@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart' show CupertinoPage;
 import 'package:flutter/material.dart' show MaterialPage;
 import 'package:rxdart/rxdart.dart';
@@ -14,6 +16,9 @@ class WouterRouterDelegate extends w.WouterRouterDelegate {
     addListener(() {
       final uri = Uri.parse(currentConfiguration);
       _queryParametersSubject.add(uri.queryParameters);
+      log(
+        'path: $currentConfiguration, queryParameters: ${uri.queryParameters}',
+      );
       print({
         'path': currentConfiguration,
         'queryParameters': uri.queryParameters,
