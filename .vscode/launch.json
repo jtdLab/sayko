@@ -1,0 +1,104 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // flutter run -t lib/main.dart --flavor development --dart-define-from-file config-development.json
+      "name": "DEV",
+      "program": "lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "development",
+        "--dart-define-from-file",
+        "config-development.json"
+      ]
+    },
+    {
+      // flutter run -t lib/main.dart --flavor staging --dart-define-from-file config-staging.json
+      "name": "STG",
+      "program": "lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "staging",
+        "--dart-define-from-file",
+        "config-staging.json"
+      ]
+    },
+    {
+      // flutter run -t lib/main.dart --flavor production --dart-define-from-file config-production.json
+      "name": "PROD",
+      "program": "lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "production",
+        "--dart-define-from-file",
+        "config-production.json"
+      ]
+    },
+    {
+      // flutter run -t lib/main.dart --web-port 49371 --web-hostname localhost -d chrome --dart-define FLAVOR=development --dart-define-from-file config-development.json
+      "name": "DEV [WEB]",
+      "program": "lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-port",
+        "49371",
+        "--web-hostname",
+        "localhost",
+        "-d",
+        "chrome",
+        "--dart-define",
+        "FLAVOR=development",
+        "--dart-define-from-file",
+        "config-development.json"
+      ]
+    },
+    {
+      // flutter run -t lib/main.dart --web-port 49371 --web-hostname localhost -d chrome --dart-define FLAVOR=staging --dart-define-from-file config-staging.json
+      "name": "STG [WEB]",
+      "program": "lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-port",
+        "49371",
+        "--web-hostname",
+        "localhost",
+        "-d",
+        "chrome",
+        "--dart-define",
+        "FLAVOR=staging",
+        "--dart-define-from-file",
+        "config-staging.json"
+      ]
+    },
+    {
+      // flutter run -t lib/main.dart --web-port 49371 --web-hostname localhost -d chrome --dart-define FLAVOR=production --dart-define-from-file config-production.json
+      "name": "PROD [WEB]",
+      "program": "lib/main.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-port",
+        "49371",
+        "--web-hostname",
+        "localhost",
+        "-d",
+        "chrome",
+        "--dart-define",
+        "FLAVOR=production",
+        "--dart-define-from-file",
+        "config-production.json"
+      ]
+    }
+  ]
+}

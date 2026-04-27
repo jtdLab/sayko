@@ -1,0 +1,8 @@
+include:
+  - lib/data/**/dtos/*.dart
+  - lib/data/**/requests/*.dart
+  - lib/data/**/responses/*.dart
+  - lib/domain/**/models/*.dart
+  - lib/features/**/cubit/*_state.dart
+  - lib/features/**/cubit/*_presentation_event.dart
+  - lib/features/**/models/*.dart

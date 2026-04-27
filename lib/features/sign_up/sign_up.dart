@@ -1,0 +1,22 @@
+import 'package:sayko/core/bloc/bloc.dart';
+import 'package:sayko/core/provider.dart';
+import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/auth/auth.dart';
+import 'package:sayko/features/app/app.dart';
+import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/platform.dart';
+import 'package:sayko/ui/ui.dart';
+
+part 'cubit/sign_up_cubit.dart';
+part 'sign_up_page.dart';
+part 'sign_up_routing.dart';
+part 'sign_up_utils.dart';
+part 'widgets/sign_up_already_have_an_account.dart';
+part 'widgets/sign_up_apple_button.dart';
+part 'widgets/sign_up_body.dart';
+part 'widgets/sign_up_email_button.dart';
+part 'widgets/sign_up_google_button.dart';
+part 'widgets/sign_up_header.dart';
+part 'widgets/sign_up_log_in_link.dart';
+part 'widgets/sign_up_logo.dart';
+part 'widgets/sign_up_title.dart';

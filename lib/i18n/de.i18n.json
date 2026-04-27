@@ -1,0 +1,259 @@
+{
+  "features": {
+    "accountCreate": {
+      "createButton": {
+        "label": "Konto erstellen"
+      },
+      "failedToCreateAccount": "Konto konnte nicht erstellt werden",
+      "header": {
+        "title": "Konto erstellen"
+      },
+      "nameField": {
+        "description": "Wie sollen wir Sie nennen?",
+        "label": "Name"
+      },
+      "privacyItem": {
+        "description": "Datenschutzrichtlinie lesen",
+        "label": "Ich habe die Datenschutzrichtlinie gelesen"
+      },
+      "requiredBadge": {
+        "label": "Pflichtfeld"
+      },
+      "termsItem": {
+        "description": "Nutzungsbedingungen lesen",
+        "label": "Ich stimme den Nutzungsbedingungen zu"
+      }
+    },
+    "auth": {
+      "loginButton": {
+        "title": "Anmelden"
+      },
+      "signUpButton": {
+        "title": "Kostenlos registrieren"
+      },
+      "title": {
+        "text": "Finde deine Ruhe.\n Mit sayko."
+      }
+    },
+    "deleteAccountConfirm": {
+      "cancelButton": {
+        "text": "Abbrechen"
+      },
+      "confirmButton": {
+        "text": "Konto löschen"
+      },
+      "subtitle": "Diese Aktion kann nicht rückgängig gemacht werden. Ihr Konto und alle Daten werden dauerhaft gelöscht.",
+      "title": "Konto löschen?"
+    },
+    "home": {
+      "header": {
+        "title": "Start"
+      }
+    },
+    "launchpad": {
+      "bottomNavigationBar": {
+        "home": "Start",
+        "settings": "Einstellungen"
+      }
+    },
+    "login": {
+      "appleButton": {
+        "text": "Mit Apple fortfahren"
+      },
+      "dontHaveAnAccount": {
+        "text": "Noch kein Konto?"
+      },
+      "emailButton": {
+        "text": "Mit E-Mail fortfahren"
+      },
+      "googleButton": {
+        "text": "Mit Google fortfahren"
+      },
+      "signUpLink": {
+        "text": "Registrieren"
+      },
+      "title": {
+        "text": "Bei Sayko anmelden"
+      }
+    },
+    "loginPassword": {
+      "emailField": {
+        "label": "E-Mail"
+      },
+      "failedToSignIn": "Anmeldung fehlgeschlagen",
+      "header": {
+        "title": "Anmelden"
+      },
+      "passwordField": {
+        "label": "Passwort"
+      },
+      "passwordResetLink": {
+        "link": "Passwort vergessen?"
+      },
+      "signInButton": {
+        "text": "Anmelden"
+      }
+    },
+    "logoutConfirm": {
+      "cancelButton": {
+        "text": "Abbrechen"
+      },
+      "confirmButton": {
+        "text": "Abmelden"
+      },
+      "title": "Abmelden?"
+    },
+    "notFound": {
+      "body": {
+        "subtitle": {
+          "text": "Die gesuchte Seite existiert nicht."
+        },
+        "title": {
+          "text": "Seite nicht gefunden"
+        }
+      },
+      "goHomeButton": {
+        "title": "Zur Startseite"
+      }
+    },
+    "passwordReset": {
+      "button": {
+        "label": "Link zum Zurücksetzen senden"
+      },
+      "contactSupportButton": {
+        "text": "Support kontaktieren"
+      },
+      "emailField": {
+        "label": "E-Mail-Adresse"
+      },
+      "failedToSendPasswordResetEmail": "E-Mail zum Zurücksetzen des Passworts konnte nicht gesendet werden",
+      "header": {
+        "title": "Passwort zurücksetzen"
+      },
+      "helpPrompt": {
+        "text": "Benötigen Sie weitere Hilfe?"
+      },
+      "sendPasswordResetEmailSucceeded": "Prüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen"
+    },
+    "settings": {
+      "appSection": {
+        "title": "App"
+      },
+      "appSectionTileAppearance": {
+        "title": "Darstellung"
+      },
+      "appSectionTileSystemLanguage": {
+        "title": "Sprache"
+      },
+      "deleteAccountButton": {
+        "title": "Konto löschen"
+      },
+      "header": {
+        "title": "Einstellungen"
+      },
+      "legalSection": {
+        "title": "Rechtliches"
+      },
+      "legalSectionTile": {
+        "title": "Datenschutzrichtlinie"
+      },
+      "signOutButton": {
+        "title": "Abmelden"
+      },
+      "version": {
+        "text": "Version $version ($buildNumber)"
+      }
+    },
+    "settingsAppearance": {
+      "header": {
+        "title": "Darstellung"
+      }
+    },
+    "settingsSystemLanguage": {
+      "header": {
+        "title": "Sprache"
+      }
+    },
+    "signUp": {
+      "alreadyHaveAnAccount": {
+        "text": "Bereits ein Konto?"
+      },
+      "appleButton": {
+        "text": "Mit Apple fortfahren"
+      },
+      "emailButton": {
+        "text": "Mit E-Mail fortfahren"
+      },
+      "googleButton": {
+        "text": "Mit Google fortfahren"
+      },
+      "logInLink": {
+        "text": "Anmelden"
+      },
+      "title": {
+        "text": "Registriere dich, um zu beginnen"
+      }
+    },
+    "signUpPassword": {
+      "emailButton": {
+        "label": "Weiter"
+      },
+      "emailField": {
+        "description": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+        "label": "E-Mail"
+      },
+      "failedToSignUp": "Konto konnte nicht erstellt werden",
+      "header": {
+        "title": "Konto erstellen"
+      },
+      "passwordButton": {
+        "label": "Weiter"
+      },
+      "passwordField": {
+        "description": "Wählen Sie ein sicheres Passwort.",
+        "label": "Passwort"
+      }
+    },
+    "verifyEmail": {
+      "body": {
+        "description": "Wir haben Ihnen einen Bestätigungslink per E-Mail geschickt. Klicken Sie auf den Link, um Ihr Konto zu bestätigen und fortzufahren.",
+        "title": "Prüfen Sie Ihren Posteingang"
+      },
+      "header": {
+        "title": "E-Mail bestätigen"
+      },
+      "sendButton": {
+        "label": "Verifizierungs-E-Mail senden"
+      },
+      "sendVerifyEmailFailed": "Verifizierungs-E-Mail konnte nicht gesendet werden"
+    }
+  },
+  "utils": {
+    "domain": {
+      "appData": {
+        "appearance": {
+          "dark": {
+            "description": "Dunkles Design verwenden",
+            "name": "Dunkel"
+          },
+          "light": {
+            "description": "Helles Design verwenden",
+            "name": "Hell"
+          },
+          "system": {
+            "description": "Systemdesign folgen",
+            "name": "System"
+          }
+        }
+      }
+    },
+    "locale": {
+      "de": {
+        "name": "German"
+      },
+      "en": {
+        "name": "English"
+      }
+    }
+  }
+}

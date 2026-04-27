@@ -1,0 +1,22 @@
+import 'package:sayko/core/bloc/bloc.dart';
+import 'package:sayko/core/lockd.dart';
+import 'package:sayko/core/provider.dart';
+import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/auth/auth.dart';
+import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/ui/ui.dart';
+
+part 'cubit/login_password_cubit.dart';
+part 'cubit/login_password_presentation_event.dart';
+part 'cubit/login_password_state.dart';
+part 'login_password.lockd.dart';
+part 'login_password_page.dart';
+part 'login_password_routing.dart';
+part 'login_password_utils.dart';
+part 'models/login_password_status.dart';
+part 'widgets/login_password_body.dart';
+part 'widgets/login_password_email_field.dart';
+part 'widgets/login_password_header.dart';
+part 'widgets/login_password_password_field.dart';
+part 'widgets/login_password_password_reset_link.dart';
+part 'widgets/login_password_sign_in_button.dart';

@@ -1,0 +1,52 @@
+instructions:
+  - assets:download
+  - assets:extract
+  - android:flavorizrGradle
+  - android:buildGradle
+  - android:androidManifest
+  - android:icons
+  - ios:podfile
+  - ios:xcconfig
+  - ios:buildTargets
+  - ios:schema
+  - ios:icons
+  - ios:plist
+  - macos:podfile
+  - macos:xcconfig
+  - macos:configs
+  - macos:buildTargets
+  - macos:schema
+  - macos:icons
+  - macos:plist
+  - assets:clean
+flavors:
+  development:
+    app:
+      name: "Sayko (Development)"
+      icon: "launcher_icon/icon_development.png"
+    android:
+      applicationId: "com.example.sayko.development"
+    ios:
+      bundleId: "com.example.sayko.development"
+    macos:
+      bundleId: "com.example.macos.sayko.development"
+  staging:
+    app:
+      name: "Sayko (Staging)"
+      icon: "launcher_icon/icon_staging.png"
+    android:
+      applicationId: "com.example.sayko.staging"
+    ios:
+      bundleId: "com.example.sayko.staging"
+    macos:
+      bundleId: "com.example.macos.sayko.staging"
+  production:
+    app:
+      name: "Sayko"
+      icon: "launcher_icon/icon.png"
+    android:
+      applicationId: "com.example.sayko"
+    ios:
+      bundleId: "com.example.sayko"
+    macos:
+      bundleId: "com.example.macos.sayko"

@@ -1,0 +1,29 @@
+# Derry setup. See https://pub.dev/packages/derry.
+################################################################################
+# Scripts for project (e.g all packages) via: derry <command>
+################################################################################
+# Analyze project
+analyze: flutter analyze --no-pub
+# Fetch environment variables
+op-get:
+  - op document get config-development.json --vault $vault --output config-development.json
+  - op document get config-staging.json --vault $vault --output config-staging.json
+  - op document get config-production.json --vault $vault --output config-production.json
+  - op document get key.properties --vault $vault --output android/key.properties
+  - op document get upload-key-store.jks --vault $vault --output android/upload-key-store.jks
+op-push:
+  - op document edit config-development.json config-development.json --vault $vault
+  - op document edit config-staging.json config-staging.json --vault $vault
+  - op document edit config-production.json config-production.json --vault $vault
+# Format project
+format: dart format .
+# Generate flavors
+gen-flavor: dart run flutter_flavorizr -f
+# Generate launcher icons
+gen-launcher-icons: dart run flutter_launcher_icons
+# Generate native splash screen
+gen-native-splash: dart run flutter_native_splash:create
+# Develop E2E Tests
+patrol-develop: sh tools/patrol_develop.sh
+# Run E2E Tests
+patrol-test: sh tools/patrol_test.sh

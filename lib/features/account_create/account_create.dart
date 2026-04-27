@@ -1,0 +1,24 @@
+import 'package:sayko/core/bloc/bloc.dart';
+import 'package:sayko/core/lockd.dart';
+import 'package:sayko/core/provider.dart';
+import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/user_data/user_data.dart';
+import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/ui/ui.dart';
+import 'package:sayko/utils/string.dart';
+
+part 'account_create.lockd.dart';
+part 'account_create_page.dart';
+part 'account_create_routing.dart';
+part 'account_create_utils.dart';
+part 'cubit/account_create_cubit.dart';
+part 'cubit/account_create_presentation_event.dart';
+part 'cubit/account_create_state.dart';
+part 'models/account_create_status.dart';
+part 'widgets/account_create_body.dart';
+part 'widgets/account_create_create_button.dart';
+part 'widgets/account_create_header.dart';
+part 'widgets/account_create_name_field.dart';
+part 'widgets/account_create_privacy_item.dart';
+part 'widgets/account_create_required_badge.dart';
+part 'widgets/account_create_terms_item.dart';

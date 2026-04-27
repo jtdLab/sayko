@@ -1,0 +1,26 @@
+{
+  "appName": "sayko",
+  "org": "com.example",
+  "fallbackLanguage": "en",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "authSlogan": {
+    "en": "Find your calm.\n With sayko.",
+    "de": "Finde deine Ruhe.\n Mit sayko."
+  },
+  "signUpSlogan": {
+    "en": "Sign up to begin your practice",
+    "de": "Registriere dich, um zu beginnen"
+  },
+  "analytics": false,
+  "feedback": false,
+  "purchases": false,
+  "pushNotifications": false,
+  "logo": {
+    "light": "logo-light.png",
+    "dark": "logo-dark.png"
+  },
+  "launcherIcon": "launcher-icon.png"
+}

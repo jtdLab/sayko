@@ -1,0 +1,19 @@
+import 'package:sayko/core/bloc/bloc.dart';
+import 'package:sayko/core/lockd.dart';
+import 'package:sayko/core/provider.dart';
+import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/auth/auth.dart';
+import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/ui/ui.dart';
+
+part 'cubit/verify_email_cubit.dart';
+part 'cubit/verify_email_presentation_event.dart';
+part 'cubit/verify_email_state.dart';
+part 'models/verify_email_status.dart';
+part 'verify_email.lockd.dart';
+part 'verify_email_page.dart';
+part 'verify_email_routing.dart';
+part 'verify_email_utils.dart';
+part 'widgets/verify_email_body.dart';
+part 'widgets/verify_email_header.dart';
+part 'widgets/verify_email_send_button.dart';

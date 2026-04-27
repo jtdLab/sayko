@@ -1,0 +1,23 @@
+import 'package:sayko/core/bloc/bloc.dart';
+import 'package:sayko/core/lockd.dart';
+import 'package:sayko/core/provider.dart';
+import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/auth/auth.dart';
+import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/ui/ui.dart';
+import 'package:sayko/utils/string.dart';
+
+part 'cubit/password_reset_cubit.dart';
+part 'cubit/password_reset_presentation_event.dart';
+part 'cubit/password_reset_state.dart';
+part 'models/password_reset_status.dart';
+part 'password_reset.lockd.dart';
+part 'password_reset_page.dart';
+part 'password_reset_routing.dart';
+part 'password_reset_utils.dart';
+part 'widgets/password_reset_body.dart';
+part 'widgets/password_reset_button.dart';
+part 'widgets/password_reset_contact_support_button.dart';
+part 'widgets/password_reset_email_field.dart';
+part 'widgets/password_reset_header.dart';
+part 'widgets/password_reset_help_prompt.dart';

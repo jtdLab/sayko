@@ -1,0 +1,259 @@
+{
+  "features": {
+    "accountCreate": {
+      "createButton": {
+        "label": "Create Account"
+      },
+      "failedToCreateAccount": "Failed to create account",
+      "header": {
+        "title": "Create Account"
+      },
+      "nameField": {
+        "description": "How should we call you?",
+        "label": "Name"
+      },
+      "privacyItem": {
+        "description": "Read Privacy Policy",
+        "label": "I have read the Privacy Policy"
+      },
+      "requiredBadge": {
+        "label": "Required"
+      },
+      "termsItem": {
+        "description": "Read Terms of Use",
+        "label": "I agree to the Terms of Use"
+      }
+    },
+    "auth": {
+      "loginButton": {
+        "title": "Login"
+      },
+      "signUpButton": {
+        "title": "Sign up for free"
+      },
+      "title": {
+        "text": "Find your calm.\n With sayko."
+      }
+    },
+    "deleteAccountConfirm": {
+      "cancelButton": {
+        "text": "Cancel"
+      },
+      "confirmButton": {
+        "text": "Delete Account"
+      },
+      "subtitle": "This action cannot be undone. This will permanently delete your account and remove your data from our servers.",
+      "title": "Delete Account?"
+    },
+    "home": {
+      "header": {
+        "title": "Home"
+      }
+    },
+    "launchpad": {
+      "bottomNavigationBar": {
+        "home": "Home",
+        "settings": "Settings"
+      }
+    },
+    "login": {
+      "appleButton": {
+        "text": "Continue with Apple"
+      },
+      "dontHaveAnAccount": {
+        "text": "Don't have an account?"
+      },
+      "emailButton": {
+        "text": "Continue with Email"
+      },
+      "googleButton": {
+        "text": "Continue with Google"
+      },
+      "signUpLink": {
+        "text": "Sign Up"
+      },
+      "title": {
+        "text": "Login to Sayko"
+      }
+    },
+    "loginPassword": {
+      "emailField": {
+        "label": "Email"
+      },
+      "failedToSignIn": "Failed to sign in",
+      "header": {
+        "title": "Sign In"
+      },
+      "passwordField": {
+        "label": "Password"
+      },
+      "passwordResetLink": {
+        "link": "Forgot Password?"
+      },
+      "signInButton": {
+        "text": "Sign In"
+      }
+    },
+    "logoutConfirm": {
+      "cancelButton": {
+        "text": "Cancel"
+      },
+      "confirmButton": {
+        "text": "Logout"
+      },
+      "title": "Sign out?"
+    },
+    "notFound": {
+      "body": {
+        "subtitle": {
+          "text": "The page you are looking for does not exist."
+        },
+        "title": {
+          "text": "Page not found"
+        }
+      },
+      "goHomeButton": {
+        "title": "Go Home"
+      }
+    },
+    "passwordReset": {
+      "button": {
+        "label": "Send Reset Link"
+      },
+      "contactSupportButton": {
+        "text": "Contact Support"
+      },
+      "emailField": {
+        "label": "Email address"
+      },
+      "failedToSendPasswordResetEmail": "Failed to send password reset email",
+      "header": {
+        "title": "Reset Password"
+      },
+      "helpPrompt": {
+        "text": "Need more help?"
+      },
+      "sendPasswordResetEmailSucceeded": "Check your inbox for the password reset link"
+    },
+    "settings": {
+      "appSection": {
+        "title": "App"
+      },
+      "appSectionTileAppearance": {
+        "title": "Appearance"
+      },
+      "appSectionTileSystemLanguage": {
+        "title": "Language"
+      },
+      "deleteAccountButton": {
+        "title": "Delete Account"
+      },
+      "header": {
+        "title": "Settings"
+      },
+      "legalSection": {
+        "title": "Legal"
+      },
+      "legalSectionTile": {
+        "title": "Privacy Policy"
+      },
+      "signOutButton": {
+        "title": "Sign Out"
+      },
+      "version": {
+        "text": "Version $version ($buildNumber)"
+      }
+    },
+    "settingsAppearance": {
+      "header": {
+        "title": "Appearance"
+      }
+    },
+    "settingsSystemLanguage": {
+      "header": {
+        "title": "Language"
+      }
+    },
+    "signUp": {
+      "alreadyHaveAnAccount": {
+        "text": "Already have an account?"
+      },
+      "appleButton": {
+        "text": "Continue with Apple"
+      },
+      "emailButton": {
+        "text": "Continue with Email"
+      },
+      "googleButton": {
+        "text": "Continue with Google"
+      },
+      "logInLink": {
+        "text": "Log In"
+      },
+      "title": {
+        "text": "Sign up to begin your practice"
+      }
+    },
+    "signUpPassword": {
+      "emailButton": {
+        "label": "Continue"
+      },
+      "emailField": {
+        "description": "Please enter your email address.",
+        "label": "Email"
+      },
+      "failedToSignUp": "Failed to create account",
+      "header": {
+        "title": "Create Account"
+      },
+      "passwordButton": {
+        "label": "Continue"
+      },
+      "passwordField": {
+        "description": "Choose a secure password.",
+        "label": "Password"
+      }
+    },
+    "verifyEmail": {
+      "body": {
+        "description": "We've sent a verification link to your email address. Click the link to verify your account and continue.",
+        "title": "Check your inbox"
+      },
+      "header": {
+        "title": "Verify Email"
+      },
+      "sendButton": {
+        "label": "Send Verification Email"
+      },
+      "sendVerifyEmailFailed": "Failed to send verification email"
+    }
+  },
+  "utils": {
+    "domain": {
+      "appData": {
+        "appearance": {
+          "dark": {
+            "description": "Use dark theme",
+            "name": "Dark"
+          },
+          "light": {
+            "description": "Use light theme",
+            "name": "Light"
+          },
+          "system": {
+            "description": "Follow system theme",
+            "name": "System"
+          }
+        }
+      }
+    },
+    "locale": {
+      "de": {
+        "name": "German"
+      },
+      "en": {
+        "name": "English"
+      }
+    }
+  }
+}
