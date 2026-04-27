@@ -45,7 +45,7 @@ Future<void> setupApp() async {
 }
 
 void launchApp() {
-  SaykoLaunchConfig.devicePreviewEnabled = kDebugMode;
+  SaykoLaunchConfig.devicePreviewEnabled = true;
 
   final app = MultiProvider(
     providers: [
