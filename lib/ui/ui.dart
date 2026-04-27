@@ -40,7 +40,11 @@ export 'package:sayko_assets/sayko_assets.dart';
 
 part 'forui.dart';
 part 'utils.dart';
+part 'widgets/abstract_scape.dart';
 part 'widgets/app.dart';
+part 'widgets/eyebrow.dart';
 part 'widgets/gap.dart';
 part 'widgets/image.dart';
 part 'widgets/logo.dart';
+part 'widgets/session_art.dart';
+part 'widgets/tone.dart';
