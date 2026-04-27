@@ -1,0 +1,19 @@
+import 'package:sayko/core/bloc/bloc.dart';
+import 'package:sayko/core/lockd.dart';
+import 'package:sayko/core/provider.dart';
+import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/user_data/user_data.dart';
+import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/ui/ui.dart';
+
+part 'cubit/welcome_cubit.dart';
+part 'cubit/welcome_state.dart';
+part 'welcome.lockd.dart';
+part 'welcome_page.dart';
+part 'welcome_routing.dart';
+part 'welcome_utils.dart';
+part 'widgets/welcome_body.dart';
+part 'widgets/welcome_continue_button.dart';
+part 'widgets/welcome_dots.dart';
+part 'widgets/welcome_skip_button.dart';
+part 'widgets/welcome_slide.dart';
