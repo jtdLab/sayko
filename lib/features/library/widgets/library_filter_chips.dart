@@ -23,20 +23,24 @@ class LibraryFilterChips extends HookWidget {
       (LibraryFilter.body, i18n.filterBody.label),
     ];
 
-    return SizedBox(
-      height: 36,
-      child: ListView.separated(
-        scrollDirection: Axis.horizontal,
-        itemCount: entries.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 6),
-        itemBuilder: (context, i) {
-          final (f, label) = entries[i];
-          return FButton(
-            variant: active == f ? .primary : .outline,
-            onPress: () => cubit.changeFilter(f),
-            child: Text(label),
-          );
-        },
+    final chips = <Widget>[
+      for (final (f, label) in entries)
+        FButton(
+          variant: active == f ? .primary : .outline,
+          onPress: () => cubit.changeFilter(f),
+          child: Text(label),
+        ),
+    ];
+
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          for (var i = 0; i < chips.length; i++) ...[
+            if (i > 0) const SizedBox(width: 6),
+            chips[i],
+          ],
+        ],
       ),
     );
   }
