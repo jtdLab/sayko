@@ -13,11 +13,15 @@ class UserDataRepository {
     return _userDataStore.read() ?? const UserData(displayName: '');
   }
 
-  Future<void> update({required String? displayName}) async {
+  Future<void> update({
+    required String? displayName,
+    int? onboardingStep,
+  }) async {
     try {
       final current = read();
       final updated = current.copyWith(
         displayName: displayName ?? current.displayName,
+        onboardingStep: onboardingStep ?? current.onboardingStep,
       );
       await _userDataStore.put(updated);
     } on Object catch (e, stackTrace) {

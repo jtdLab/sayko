@@ -16,6 +16,8 @@ const Object _unset = Object();
 mixin _$UserData {
   String get displayName;
 
+  int? get onboardingStep;
+
   _UserDataCopyWith get copyWith => _UserDataCopyWith(this);
 
   Map<String, dynamic> toJson();
@@ -30,25 +32,38 @@ class _UserDataCopyWith {
     return identical(value, _unset) ? current : value as T;
   }
 
-  UserData call({Object? displayName = _unset}) {
-    return UserData(displayName: _pick<String>(displayName, _v.displayName));
+  UserData call({
+    Object? displayName = _unset,
+    Object? onboardingStep = _unset,
+  }) {
+    return UserData(
+      displayName: _pick<String>(displayName, _v.displayName),
+      onboardingStep: _pick<int?>(onboardingStep, _v.onboardingStep),
+    );
   }
 }
 
 class _UserData with _$UserData implements UserData {
-  const _UserData({required this.displayName});
+  const _UserData({required this.displayName, this.onboardingStep});
 
   factory _UserData.fromJson(Map<String, dynamic> json) {
-    return _UserData(displayName: json['displayName'] as String);
+    return _UserData(
+      displayName: json['displayName'] as String,
+      onboardingStep: json['onboardingStep'] as int?,
+    );
   }
 
   @override
   final String displayName;
 
+  @override
+  final int? onboardingStep;
+
   Map<String, dynamic> toJson() {
-    return {'displayName': displayName};
+    return {'displayName': displayName, 'onboardingStep': onboardingStep};
   }
 
   @override
-  String toString() => 'UserData(displayName: $displayName)';
+  String toString() =>
+      'UserData(displayName: $displayName, onboardingStep: $onboardingStep)';
 }
