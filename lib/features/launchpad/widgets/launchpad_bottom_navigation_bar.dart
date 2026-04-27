@@ -19,15 +19,11 @@ class LaunchpadBottomNavigationBar extends HookWidget {
       children: [
         FBottomNavigationBarItem(
           icon: const Icon(FIcons.house),
-          label: Text(i18n.today),
+          label: Text(i18n.home),
         ),
         FBottomNavigationBarItem(
-          icon: const Icon(FIcons.bookOpen),
-          label: Text(i18n.library),
-        ),
-        FBottomNavigationBarItem(
-          icon: const Icon(FIcons.user),
-          label: Text(i18n.profile),
+          icon: const Icon(FIcons.settings),
+          label: Text(i18n.settings),
         ),
       ],
     );

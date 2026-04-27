@@ -1,6 +1,6 @@
 part of 'launchpad.dart';
 
-const _pathIndexMap = {'/today': 0, '/library': 1, '/profile': 2};
+const _pathIndexMap = {'/home': 0, '/settings': 1};
 
 extension on BuildContext {
   Future<void> pushLaunchpadTab(int index) async {
