@@ -24,6 +24,27 @@
         "label": "I agree to the Terms of Use"
       }
     },
+    "assessment": {
+      "header": {
+        "axisStress": "Stress response",
+        "axisSleep": "Rest & sleep",
+        "axisSelf": "Self-relation",
+        "axisFocus": "Focus & follow-through",
+        "axisRelations": "Relationships",
+        "axisBody": "Body awareness"
+      },
+      "footer": {
+        "text": "There are no right answers."
+      },
+      "likert": {
+        "disagree": "Disagree",
+        "agree": "Agree",
+        "hint": "Tap a circle to answer",
+        "stronglyDisagree": "Strongly disagree",
+        "neutral": "Neutral",
+        "stronglyAgree": "Strongly agree"
+      }
+    },
     "auth": {
       "loginButton": {
         "title": "Login"
@@ -52,8 +73,47 @@
     },
     "launchpad": {
       "bottomNavigationBar": {
+        "today": "Today",
+        "library": "Library",
+        "profile": "Profile",
         "home": "Home",
         "settings": "Settings"
+      }
+    },
+    "library": {
+      "header": {
+        "eyebrow": "Library",
+        "title": "What do you need today?"
+      },
+      "filterAll": {
+        "label": "All"
+      },
+      "filterStress": {
+        "label": "Stress"
+      },
+      "filterSleep": {
+        "label": "Sleep"
+      },
+      "filterSelf": {
+        "label": "Self"
+      },
+      "filterRelations": {
+        "label": "Relationships"
+      },
+      "filterFocus": {
+        "label": "Focus"
+      },
+      "filterBody": {
+        "label": "Body"
+      },
+      "todayPick": {
+        "badge": "Today's pick"
+      },
+      "freeBadge": {
+        "label": "Free"
+      },
+      "allSessions": {
+        "label": "All sessions"
       }
     },
     "login": {
@@ -135,6 +195,153 @@
       },
       "sendPasswordResetEmailSucceeded": "Check your inbox for the password reset link"
     },
+    "paywall": {
+      "header": {
+        "title": "Unlock the full library.",
+        "body": "Over 30 sessions drawn from twelve years of therapeutic practice. New content every week."
+      },
+      "annualPlan": {
+        "title": "Annual",
+        "badge": "Best value"
+      },
+      "singlePlan": {
+        "title": "Single session",
+        "sub": "Lifetime access"
+      },
+      "feature1": {
+        "label": "30+ hypnosis sessions"
+      },
+      "feature2": {
+        "label": "Listen offline"
+      },
+      "feature3": {
+        "label": "AI-matched to your profile"
+      },
+      "feature4": {
+        "label": "Cancel anytime"
+      },
+      "subscribeButton": {
+        "text": "Subscribe now"
+      },
+      "redeemButton": {
+        "text": "Redeem a code"
+      }
+    },
+    "player": {
+      "nowPlaying": {
+        "label": "Now playing"
+      }
+    },
+    "profile": {
+      "header": {
+        "eyebrow": "Profile",
+        "name": "Anna M.",
+        "email": "anna@example.com"
+      },
+      "yourProfile": {
+        "label": "Your profile"
+      },
+      "redoButton": {
+        "text": "Retake"
+      },
+      "savedRow": {
+        "label": "Saved"
+      },
+      "offlineRow": {
+        "label": "Downloaded"
+      },
+      "languageRow": {
+        "label": "Language"
+      },
+      "privacyRow": {
+        "label": "Privacy"
+      },
+      "settingsRow": {
+        "label": "Settings"
+      },
+      "footer": {
+        "text": "A practice from Anna Reiter. © 2026."
+      }
+    },
+    "results": {
+      "header": {
+        "eyebrow": "Your profile",
+        "title": "You're carrying a lot.\nLet's lighten the load."
+      },
+      "strengths": {
+        "label": "Strengths"
+      },
+      "growth": {
+        "label": "Areas to tend to"
+      },
+      "recommended": {
+        "title": "Recommended for you"
+      },
+      "continueButton": {
+        "text": "Go to library"
+      },
+      "savePdfButton": {
+        "text": "Save profile as PDF"
+      }
+    },
+    "safetyBlocked": {
+      "header": {
+        "title": "What you're going through deserves more than an app.",
+        "body": "Based on your answers, we recommend reaching out to someone who can support you directly."
+      },
+      "acuteHelp": {
+        "label": "Acute help"
+      },
+      "contactSeelsorge": {
+        "label": "Telefonseelsorge",
+        "sub": "0800 111 0 111 — 24/7, free"
+      },
+      "contactEmergency": {
+        "label": "Emergency",
+        "sub": "112 — for acute danger"
+      },
+      "contactKrisenchat": {
+        "label": "krisenchat.de",
+        "sub": "Chat counseling, free"
+      },
+      "backButton": {
+        "text": "Back"
+      }
+    },
+    "safetyCheck": {
+      "header": {
+        "eyebrow": "Before we begin",
+        "title": "A short safety check.",
+        "body": "Hypnosis is safe for most people, but not all. Please answer five short questions."
+      },
+      "question1": {
+        "text": "Do you have a diagnosis of epilepsy or a history of seizures?"
+      },
+      "question2": {
+        "text": "Have you experienced psychosis, dissociative disorders, or severe untreated mental illness?"
+      },
+      "question3": {
+        "text": "Are you currently experiencing thoughts of self-harm or suicide?"
+      },
+      "question4": {
+        "text": "Are you pregnant or in the first weeks postpartum?"
+      },
+      "question5": {
+        "text": "Are you currently being treated for a serious medical or psychiatric condition?"
+      },
+      "yesButton": {
+        "text": "Yes"
+      },
+      "noButton": {
+        "text": "No"
+      },
+      "confirmButton": {
+        "text": "Confirm"
+      },
+      "footer": {
+        "text": "These answers are stored only on your device."
+      }
+    },
     "settings": {
       "appSection": {
         "title": "App"
@@ -214,6 +421,28 @@
         "label": "Password"
       }
     },
+    "today": {
+      "header": {
+        "greeting": "Good evening, Anna",
+        "tagline": "A few minutes for you."
+      },
+      "assessmentBanner": {
+        "title": "Take the 5-minute check-in",
+        "subtitle": "Unlock personalized recommendations"
+      },
+      "featuredCard": {
+        "badge": "Start here · free",
+        "listenButton": "Listen"
+      },
+      "aiRecLabel": {
+        "text": "For you today"
+      },
+      "practiceNote": {
+        "eyebrow": "A note from the practice",
+        "quote": "Three minutes of breath before sleep often changes more than an hour of rumination.",
+        "author": "— Anna Reiter, M.Sc."
+      }
+    },
     "verifyEmail": {
       "body": {
         "description": "We've sent a verification link to your email address. Click the link to verify your account and continue.",
@@ -226,6 +455,32 @@
         "label": "Send Verification Email"
       },
       "sendVerifyEmailFailed": "Failed to send verification email"
+    },
+    "welcome": {
+      "slide1": {
+        "eyebrow": "A practice from Anna Reiter",
+        "title": "Hypnosis, without the mystique.",
+        "body": "Audio-led sessions drawn from twelve years of therapeutic practice. For quieter days, lighter nights, clearer relationships."
+      },
+      "slide2": {
+        "eyebrow": "In three steps",
+        "title": "A short test.\nThen sessions\nthat fit you.",
+        "body": "20 questions, about five minutes. You receive a profile of strengths and growth areas — in everyday language, without labels."
+      },
+      "slide3": {
+        "eyebrow": "Safe and private",
+        "title": "What you share\nstays with you.",
+        "body": "GDPR-compliant, hosted in Germany. No ads, no tracking. The first session is free."
+      },
+      "continueButton": {
+        "text": "Continue"
+      },
+      "beginButton": {
+        "text": "Begin"
+      },
+      "skipButton": {
+        "text": "Skip"
+      }
     }
   },
   "utils": {

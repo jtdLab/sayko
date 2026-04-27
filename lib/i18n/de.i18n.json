@@ -24,6 +24,27 @@
         "label": "Ich stimme den Nutzungsbedingungen zu"
       }
     },
+    "assessment": {
+      "header": {
+        "axisStress": "Stressreaktion",
+        "axisSleep": "Ruhe & Schlaf",
+        "axisSelf": "Selbstbeziehung",
+        "axisFocus": "Fokus & Durchhalten",
+        "axisRelations": "Beziehungen",
+        "axisBody": "Körperwahrnehmung"
+      },
+      "footer": {
+        "text": "Es gibt keine richtigen Antworten."
+      },
+      "likert": {
+        "disagree": "Stimme nicht zu",
+        "agree": "Stimme zu",
+        "hint": "Tippe einen Kreis zum Antworten",
+        "stronglyDisagree": "Stimme gar nicht zu",
+        "neutral": "Neutral",
+        "stronglyAgree": "Stimme voll zu"
+      }
+    },
     "auth": {
       "loginButton": {
         "title": "Anmelden"
@@ -52,8 +73,47 @@
     },
     "launchpad": {
       "bottomNavigationBar": {
+        "today": "Heute",
+        "library": "Bibliothek",
+        "profile": "Profil",
         "home": "Start",
         "settings": "Einstellungen"
+      }
+    },
+    "library": {
+      "header": {
+        "eyebrow": "Bibliothek",
+        "title": "Was brauchst du heute?"
+      },
+      "filterAll": {
+        "label": "Alle"
+      },
+      "filterStress": {
+        "label": "Stress"
+      },
+      "filterSleep": {
+        "label": "Schlaf"
+      },
+      "filterSelf": {
+        "label": "Selbst"
+      },
+      "filterRelations": {
+        "label": "Beziehung"
+      },
+      "filterFocus": {
+        "label": "Fokus"
+      },
+      "filterBody": {
+        "label": "Körper"
+      },
+      "todayPick": {
+        "badge": "Heute empfohlen"
+      },
+      "freeBadge": {
+        "label": "Kostenlos"
+      },
+      "allSessions": {
+        "label": "Alle Sitzungen"
       }
     },
     "login": {
@@ -135,6 +195,153 @@
       },
       "sendPasswordResetEmailSucceeded": "Prüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen"
     },
+    "paywall": {
+      "header": {
+        "title": "Die ganze Bibliothek freischalten.",
+        "body": "Über 30 Sitzungen aus zwölf Jahren therapeutischer Praxis. Jede Woche neue Inhalte."
+      },
+      "annualPlan": {
+        "title": "Jahresabo",
+        "badge": "Beste Wahl"
+      },
+      "singlePlan": {
+        "title": "Einzelne Sitzung",
+        "sub": "Lebenslanger Zugang"
+      },
+      "feature1": {
+        "label": "Über 30 Hypnose-Sitzungen"
+      },
+      "feature2": {
+        "label": "Auch offline anhören"
+      },
+      "feature3": {
+        "label": "KI-empfohlen, basierend auf deinem Profil"
+      },
+      "feature4": {
+        "label": "Jederzeit kündbar"
+      },
+      "subscribeButton": {
+        "text": "Jetzt abonnieren"
+      },
+      "redeemButton": {
+        "text": "Code einlösen"
+      }
+    },
+    "player": {
+      "nowPlaying": {
+        "label": "Sitzung läuft"
+      }
+    },
+    "profile": {
+      "header": {
+        "eyebrow": "Profil",
+        "name": "Anna M.",
+        "email": "anna@example.com"
+      },
+      "yourProfile": {
+        "label": "Dein Profil"
+      },
+      "redoButton": {
+        "text": "Erneut machen"
+      },
+      "savedRow": {
+        "label": "Gemerkt"
+      },
+      "offlineRow": {
+        "label": "Offline"
+      },
+      "languageRow": {
+        "label": "Sprache"
+      },
+      "privacyRow": {
+        "label": "Datenschutz"
+      },
+      "settingsRow": {
+        "label": "Einstellungen"
+      },
+      "footer": {
+        "text": "Eine Praxis von Anna Reiter. © 2026."
+      }
+    },
+    "results": {
+      "header": {
+        "eyebrow": "Dein Profil",
+        "title": "Du trägst viel.\nLass uns leichter werden."
+      },
+      "strengths": {
+        "label": "Stärken"
+      },
+      "growth": {
+        "label": "Wachstumsfelder"
+      },
+      "recommended": {
+        "title": "Empfohlen für dich"
+      },
+      "continueButton": {
+        "text": "Zur Bibliothek"
+      },
+      "savePdfButton": {
+        "text": "Profil als PDF speichern"
+      }
+    },
+    "safetyBlocked": {
+      "header": {
+        "title": "Was du gerade durchmachst, verdient mehr als eine App.",
+        "body": "Aufgrund deiner Antworten empfehlen wir, dich an eine Person zu wenden, die dich direkt unterstützen kann."
+      },
+      "acuteHelp": {
+        "label": "Akute Hilfe"
+      },
+      "contactSeelsorge": {
+        "label": "Telefonseelsorge",
+        "sub": "0800 111 0 111 — 24/7, kostenfrei"
+      },
+      "contactEmergency": {
+        "label": "Notruf",
+        "sub": "112 — bei akuter Gefahr"
+      },
+      "contactKrisenchat": {
+        "label": "krisenchat.de",
+        "sub": "Chat-Beratung, kostenlos"
+      },
+      "backButton": {
+        "text": "Zurück"
+      }
+    },
+    "safetyCheck": {
+      "header": {
+        "eyebrow": "Bevor wir beginnen",
+        "title": "Eine kurze Sicherheitsabfrage.",
+        "body": "Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte fünf kurze Fragen."
+      },
+      "question1": {
+        "text": "Hast du eine Diagnose von Epilepsie oder Anfälle in der Vorgeschichte?"
+      },
+      "question2": {
+        "text": "Hattest du Psychosen, dissoziative Störungen oder schwere unbehandelte psychische Erkrankungen?"
+      },
+      "question3": {
+        "text": "Hast du derzeit Gedanken an Selbstverletzung oder Suizid?"
+      },
+      "question4": {
+        "text": "Bist du schwanger oder in den ersten Wochen nach der Geburt?"
+      },
+      "question5": {
+        "text": "Wirst du derzeit für eine schwere medizinische oder psychiatrische Erkrankung behandelt?"
+      },
+      "yesButton": {
+        "text": "Ja"
+      },
+      "noButton": {
+        "text": "Nein"
+      },
+      "confirmButton": {
+        "text": "Bestätigen"
+      },
+      "footer": {
+        "text": "Diese Antworten werden nur lokal gespeichert."
+      }
+    },
     "settings": {
       "appSection": {
         "title": "App"
@@ -214,6 +421,28 @@
         "label": "Passwort"
       }
     },
+    "today": {
+      "header": {
+        "greeting": "Guten Abend, Anna",
+        "tagline": "Wenige Minuten für dich."
+      },
+      "assessmentBanner": {
+        "title": "Mach den 5-Minuten-Test",
+        "subtitle": "Persönliche Empfehlungen freischalten"
+      },
+      "featuredCard": {
+        "badge": "Beginne hier · kostenlos",
+        "listenButton": "Anhören"
+      },
+      "aiRecLabel": {
+        "text": "Für dich heute"
+      },
+      "practiceNote": {
+        "eyebrow": "Vom Praxisteam",
+        "quote": "Drei Minuten Atmen vor dem Schlafen verändern oft mehr als eine Stunde Grübeln.",
+        "author": "— Anna Reiter, M.Sc."
+      }
+    },
     "verifyEmail": {
       "body": {
         "description": "Wir haben Ihnen einen Bestätigungslink per E-Mail geschickt. Klicken Sie auf den Link, um Ihr Konto zu bestätigen und fortzufahren.",
@@ -226,6 +455,32 @@
         "label": "Verifizierungs-E-Mail senden"
       },
       "sendVerifyEmailFailed": "Verifizierungs-E-Mail konnte nicht gesendet werden"
+    },
+    "welcome": {
+      "slide1": {
+        "eyebrow": "Eine Praxis von Anna Reiter",
+        "title": "Hypnose, ohne Esoterik.",
+        "body": "Audiogeführte Sitzungen aus zwölf Jahren therapeutischer Arbeit. Für ruhigere Tage, leichtere Nächte, klarere Beziehungen."
+      },
+      "slide2": {
+        "eyebrow": "In drei Schritten",
+        "title": "Ein kurzer Test.\nDann Sitzungen,\ndie zu dir passen.",
+        "body": "20 Fragen, etwa fünf Minuten. Du erhältst ein Profil mit Stärken und Wachstumsfeldern — in Alltagssprache, ohne Etiketten."
+      },
+      "slide3": {
+        "eyebrow": "Sicher und privat",
+        "title": "Was du teilst,\nbleibt bei dir.",
+        "body": "GDPR-konform, in Deutschland gehostet. Keine Werbung, kein Tracking. Die erste Sitzung ist kostenlos."
+      },
+      "continueButton": {
+        "text": "Weiter"
+      },
+      "beginButton": {
+        "text": "Beginnen"
+      },
+      "skipButton": {
+        "text": "Überspringen"
+      }
     }
   },
   "utils": {

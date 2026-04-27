@@ -51,21 +51,31 @@ class _TranslationsFeaturesDe extends TranslationsFeaturesEn {
 
 	// Translations
 	@override late final _TranslationsFeaturesAccountCreateDe accountCreate = _TranslationsFeaturesAccountCreateDe._(_root);
+	@override late final _TranslationsFeaturesAssessmentDe assessment = _TranslationsFeaturesAssessmentDe._(_root);
 	@override late final _TranslationsFeaturesAuthDe auth = _TranslationsFeaturesAuthDe._(_root);
 	@override late final _TranslationsFeaturesDeleteAccountConfirmDe deleteAccountConfirm = _TranslationsFeaturesDeleteAccountConfirmDe._(_root);
 	@override late final _TranslationsFeaturesHomeDe home = _TranslationsFeaturesHomeDe._(_root);
 	@override late final _TranslationsFeaturesLaunchpadDe launchpad = _TranslationsFeaturesLaunchpadDe._(_root);
+	@override late final _TranslationsFeaturesLibraryDe library = _TranslationsFeaturesLibraryDe._(_root);
 	@override late final _TranslationsFeaturesLoginDe login = _TranslationsFeaturesLoginDe._(_root);
 	@override late final _TranslationsFeaturesLoginPasswordDe loginPassword = _TranslationsFeaturesLoginPasswordDe._(_root);
 	@override late final _TranslationsFeaturesLogoutConfirmDe logoutConfirm = _TranslationsFeaturesLogoutConfirmDe._(_root);
 	@override late final _TranslationsFeaturesNotFoundDe notFound = _TranslationsFeaturesNotFoundDe._(_root);
 	@override late final _TranslationsFeaturesPasswordResetDe passwordReset = _TranslationsFeaturesPasswordResetDe._(_root);
+	@override late final _TranslationsFeaturesPaywallDe paywall = _TranslationsFeaturesPaywallDe._(_root);
+	@override late final _TranslationsFeaturesPlayerDe player = _TranslationsFeaturesPlayerDe._(_root);
+	@override late final _TranslationsFeaturesProfileDe profile = _TranslationsFeaturesProfileDe._(_root);
+	@override late final _TranslationsFeaturesResultsDe results = _TranslationsFeaturesResultsDe._(_root);
+	@override late final _TranslationsFeaturesSafetyBlockedDe safetyBlocked = _TranslationsFeaturesSafetyBlockedDe._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckDe safetyCheck = _TranslationsFeaturesSafetyCheckDe._(_root);
 	@override late final _TranslationsFeaturesSettingsDe settings = _TranslationsFeaturesSettingsDe._(_root);
 	@override late final _TranslationsFeaturesSettingsAppearanceDe settingsAppearance = _TranslationsFeaturesSettingsAppearanceDe._(_root);
 	@override late final _TranslationsFeaturesSettingsSystemLanguageDe settingsSystemLanguage = _TranslationsFeaturesSettingsSystemLanguageDe._(_root);
 	@override late final _TranslationsFeaturesSignUpDe signUp = _TranslationsFeaturesSignUpDe._(_root);
 	@override late final _TranslationsFeaturesSignUpPasswordDe signUpPassword = _TranslationsFeaturesSignUpPasswordDe._(_root);
+	@override late final _TranslationsFeaturesTodayDe today = _TranslationsFeaturesTodayDe._(_root);
 	@override late final _TranslationsFeaturesVerifyEmailDe verifyEmail = _TranslationsFeaturesVerifyEmailDe._(_root);
+	@override late final _TranslationsFeaturesWelcomeDe welcome = _TranslationsFeaturesWelcomeDe._(_root);
 }
 
 // Path: utils
@@ -93,6 +103,18 @@ class _TranslationsFeaturesAccountCreateDe extends TranslationsFeaturesAccountCr
 	@override late final _TranslationsFeaturesAccountCreatePrivacyItemDe privacyItem = _TranslationsFeaturesAccountCreatePrivacyItemDe._(_root);
 	@override late final _TranslationsFeaturesAccountCreateRequiredBadgeDe requiredBadge = _TranslationsFeaturesAccountCreateRequiredBadgeDe._(_root);
 	@override late final _TranslationsFeaturesAccountCreateTermsItemDe termsItem = _TranslationsFeaturesAccountCreateTermsItemDe._(_root);
+}
+
+// Path: features.assessment
+class _TranslationsFeaturesAssessmentDe extends TranslationsFeaturesAssessmentEn {
+	_TranslationsFeaturesAssessmentDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesAssessmentHeaderDe header = _TranslationsFeaturesAssessmentHeaderDe._(_root);
+	@override late final _TranslationsFeaturesAssessmentFooterDe footer = _TranslationsFeaturesAssessmentFooterDe._(_root);
+	@override late final _TranslationsFeaturesAssessmentLikertDe likert = _TranslationsFeaturesAssessmentLikertDe._(_root);
 }
 
 // Path: features.auth
@@ -138,6 +160,26 @@ class _TranslationsFeaturesLaunchpadDe extends TranslationsFeaturesLaunchpadEn {
 
 	// Translations
 	@override late final _TranslationsFeaturesLaunchpadBottomNavigationBarDe bottomNavigationBar = _TranslationsFeaturesLaunchpadBottomNavigationBarDe._(_root);
+}
+
+// Path: features.library
+class _TranslationsFeaturesLibraryDe extends TranslationsFeaturesLibraryEn {
+	_TranslationsFeaturesLibraryDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesLibraryHeaderDe header = _TranslationsFeaturesLibraryHeaderDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterAllDe filterAll = _TranslationsFeaturesLibraryFilterAllDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterStressDe filterStress = _TranslationsFeaturesLibraryFilterStressDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterSleepDe filterSleep = _TranslationsFeaturesLibraryFilterSleepDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterSelfDe filterSelf = _TranslationsFeaturesLibraryFilterSelfDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterRelationsDe filterRelations = _TranslationsFeaturesLibraryFilterRelationsDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterFocusDe filterFocus = _TranslationsFeaturesLibraryFilterFocusDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFilterBodyDe filterBody = _TranslationsFeaturesLibraryFilterBodyDe._(_root);
+	@override late final _TranslationsFeaturesLibraryTodayPickDe todayPick = _TranslationsFeaturesLibraryTodayPickDe._(_root);
+	@override late final _TranslationsFeaturesLibraryFreeBadgeDe freeBadge = _TranslationsFeaturesLibraryFreeBadgeDe._(_root);
+	@override late final _TranslationsFeaturesLibraryAllSessionsDe allSessions = _TranslationsFeaturesLibraryAllSessionsDe._(_root);
 }
 
 // Path: features.login
@@ -209,6 +251,101 @@ class _TranslationsFeaturesPasswordResetDe extends TranslationsFeaturesPasswordR
 	@override String get sendPasswordResetEmailSucceeded => 'Prüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen';
 }
 
+// Path: features.paywall
+class _TranslationsFeaturesPaywallDe extends TranslationsFeaturesPaywallEn {
+	_TranslationsFeaturesPaywallDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesPaywallHeaderDe header = _TranslationsFeaturesPaywallHeaderDe._(_root);
+	@override late final _TranslationsFeaturesPaywallAnnualPlanDe annualPlan = _TranslationsFeaturesPaywallAnnualPlanDe._(_root);
+	@override late final _TranslationsFeaturesPaywallSinglePlanDe singlePlan = _TranslationsFeaturesPaywallSinglePlanDe._(_root);
+	@override late final _TranslationsFeaturesPaywallFeature1De feature1 = _TranslationsFeaturesPaywallFeature1De._(_root);
+	@override late final _TranslationsFeaturesPaywallFeature2De feature2 = _TranslationsFeaturesPaywallFeature2De._(_root);
+	@override late final _TranslationsFeaturesPaywallFeature3De feature3 = _TranslationsFeaturesPaywallFeature3De._(_root);
+	@override late final _TranslationsFeaturesPaywallFeature4De feature4 = _TranslationsFeaturesPaywallFeature4De._(_root);
+	@override late final _TranslationsFeaturesPaywallSubscribeButtonDe subscribeButton = _TranslationsFeaturesPaywallSubscribeButtonDe._(_root);
+	@override late final _TranslationsFeaturesPaywallRedeemButtonDe redeemButton = _TranslationsFeaturesPaywallRedeemButtonDe._(_root);
+}
+
+// Path: features.player
+class _TranslationsFeaturesPlayerDe extends TranslationsFeaturesPlayerEn {
+	_TranslationsFeaturesPlayerDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesPlayerNowPlayingDe nowPlaying = _TranslationsFeaturesPlayerNowPlayingDe._(_root);
+}
+
+// Path: features.profile
+class _TranslationsFeaturesProfileDe extends TranslationsFeaturesProfileEn {
+	_TranslationsFeaturesProfileDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesProfileHeaderDe header = _TranslationsFeaturesProfileHeaderDe._(_root);
+	@override late final _TranslationsFeaturesProfileYourProfileDe yourProfile = _TranslationsFeaturesProfileYourProfileDe._(_root);
+	@override late final _TranslationsFeaturesProfileRedoButtonDe redoButton = _TranslationsFeaturesProfileRedoButtonDe._(_root);
+	@override late final _TranslationsFeaturesProfileSavedRowDe savedRow = _TranslationsFeaturesProfileSavedRowDe._(_root);
+	@override late final _TranslationsFeaturesProfileOfflineRowDe offlineRow = _TranslationsFeaturesProfileOfflineRowDe._(_root);
+	@override late final _TranslationsFeaturesProfileLanguageRowDe languageRow = _TranslationsFeaturesProfileLanguageRowDe._(_root);
+	@override late final _TranslationsFeaturesProfilePrivacyRowDe privacyRow = _TranslationsFeaturesProfilePrivacyRowDe._(_root);
+	@override late final _TranslationsFeaturesProfileSettingsRowDe settingsRow = _TranslationsFeaturesProfileSettingsRowDe._(_root);
+	@override late final _TranslationsFeaturesProfileFooterDe footer = _TranslationsFeaturesProfileFooterDe._(_root);
+}
+
+// Path: features.results
+class _TranslationsFeaturesResultsDe extends TranslationsFeaturesResultsEn {
+	_TranslationsFeaturesResultsDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesResultsHeaderDe header = _TranslationsFeaturesResultsHeaderDe._(_root);
+	@override late final _TranslationsFeaturesResultsStrengthsDe strengths = _TranslationsFeaturesResultsStrengthsDe._(_root);
+	@override late final _TranslationsFeaturesResultsGrowthDe growth = _TranslationsFeaturesResultsGrowthDe._(_root);
+	@override late final _TranslationsFeaturesResultsRecommendedDe recommended = _TranslationsFeaturesResultsRecommendedDe._(_root);
+	@override late final _TranslationsFeaturesResultsContinueButtonDe continueButton = _TranslationsFeaturesResultsContinueButtonDe._(_root);
+	@override late final _TranslationsFeaturesResultsSavePdfButtonDe savePdfButton = _TranslationsFeaturesResultsSavePdfButtonDe._(_root);
+}
+
+// Path: features.safetyBlocked
+class _TranslationsFeaturesSafetyBlockedDe extends TranslationsFeaturesSafetyBlockedEn {
+	_TranslationsFeaturesSafetyBlockedDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesSafetyBlockedHeaderDe header = _TranslationsFeaturesSafetyBlockedHeaderDe._(_root);
+	@override late final _TranslationsFeaturesSafetyBlockedAcuteHelpDe acuteHelp = _TranslationsFeaturesSafetyBlockedAcuteHelpDe._(_root);
+	@override late final _TranslationsFeaturesSafetyBlockedContactSeelsorgeDe contactSeelsorge = _TranslationsFeaturesSafetyBlockedContactSeelsorgeDe._(_root);
+	@override late final _TranslationsFeaturesSafetyBlockedContactEmergencyDe contactEmergency = _TranslationsFeaturesSafetyBlockedContactEmergencyDe._(_root);
+	@override late final _TranslationsFeaturesSafetyBlockedContactKrisenchatDe contactKrisenchat = _TranslationsFeaturesSafetyBlockedContactKrisenchatDe._(_root);
+	@override late final _TranslationsFeaturesSafetyBlockedBackButtonDe backButton = _TranslationsFeaturesSafetyBlockedBackButtonDe._(_root);
+}
+
+// Path: features.safetyCheck
+class _TranslationsFeaturesSafetyCheckDe extends TranslationsFeaturesSafetyCheckEn {
+	_TranslationsFeaturesSafetyCheckDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesSafetyCheckHeaderDe header = _TranslationsFeaturesSafetyCheckHeaderDe._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckQuestion1De question1 = _TranslationsFeaturesSafetyCheckQuestion1De._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckQuestion2De question2 = _TranslationsFeaturesSafetyCheckQuestion2De._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckQuestion3De question3 = _TranslationsFeaturesSafetyCheckQuestion3De._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckQuestion4De question4 = _TranslationsFeaturesSafetyCheckQuestion4De._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckQuestion5De question5 = _TranslationsFeaturesSafetyCheckQuestion5De._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckYesButtonDe yesButton = _TranslationsFeaturesSafetyCheckYesButtonDe._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckNoButtonDe noButton = _TranslationsFeaturesSafetyCheckNoButtonDe._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckConfirmButtonDe confirmButton = _TranslationsFeaturesSafetyCheckConfirmButtonDe._(_root);
+	@override late final _TranslationsFeaturesSafetyCheckFooterDe footer = _TranslationsFeaturesSafetyCheckFooterDe._(_root);
+}
+
 // Path: features.settings
 class _TranslationsFeaturesSettingsDe extends TranslationsFeaturesSettingsEn {
 	_TranslationsFeaturesSettingsDe._(TranslationsDe root) : this._root = root, super.internal(root);
@@ -277,6 +414,20 @@ class _TranslationsFeaturesSignUpPasswordDe extends TranslationsFeaturesSignUpPa
 	@override late final _TranslationsFeaturesSignUpPasswordPasswordFieldDe passwordField = _TranslationsFeaturesSignUpPasswordPasswordFieldDe._(_root);
 }
 
+// Path: features.today
+class _TranslationsFeaturesTodayDe extends TranslationsFeaturesTodayEn {
+	_TranslationsFeaturesTodayDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesTodayHeaderDe header = _TranslationsFeaturesTodayHeaderDe._(_root);
+	@override late final _TranslationsFeaturesTodayAssessmentBannerDe assessmentBanner = _TranslationsFeaturesTodayAssessmentBannerDe._(_root);
+	@override late final _TranslationsFeaturesTodayFeaturedCardDe featuredCard = _TranslationsFeaturesTodayFeaturedCardDe._(_root);
+	@override late final _TranslationsFeaturesTodayAiRecLabelDe aiRecLabel = _TranslationsFeaturesTodayAiRecLabelDe._(_root);
+	@override late final _TranslationsFeaturesTodayPracticeNoteDe practiceNote = _TranslationsFeaturesTodayPracticeNoteDe._(_root);
+}
+
 // Path: features.verifyEmail
 class _TranslationsFeaturesVerifyEmailDe extends TranslationsFeaturesVerifyEmailEn {
 	_TranslationsFeaturesVerifyEmailDe._(TranslationsDe root) : this._root = root, super.internal(root);
@@ -288,6 +439,21 @@ class _TranslationsFeaturesVerifyEmailDe extends TranslationsFeaturesVerifyEmail
 	@override late final _TranslationsFeaturesVerifyEmailHeaderDe header = _TranslationsFeaturesVerifyEmailHeaderDe._(_root);
 	@override late final _TranslationsFeaturesVerifyEmailSendButtonDe sendButton = _TranslationsFeaturesVerifyEmailSendButtonDe._(_root);
 	@override String get sendVerifyEmailFailed => 'Verifizierungs-E-Mail konnte nicht gesendet werden';
+}
+
+// Path: features.welcome
+class _TranslationsFeaturesWelcomeDe extends TranslationsFeaturesWelcomeEn {
+	_TranslationsFeaturesWelcomeDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override late final _TranslationsFeaturesWelcomeSlide1De slide1 = _TranslationsFeaturesWelcomeSlide1De._(_root);
+	@override late final _TranslationsFeaturesWelcomeSlide2De slide2 = _TranslationsFeaturesWelcomeSlide2De._(_root);
+	@override late final _TranslationsFeaturesWelcomeSlide3De slide3 = _TranslationsFeaturesWelcomeSlide3De._(_root);
+	@override late final _TranslationsFeaturesWelcomeContinueButtonDe continueButton = _TranslationsFeaturesWelcomeContinueButtonDe._(_root);
+	@override late final _TranslationsFeaturesWelcomeBeginButtonDe beginButton = _TranslationsFeaturesWelcomeBeginButtonDe._(_root);
+	@override late final _TranslationsFeaturesWelcomeSkipButtonDe skipButton = _TranslationsFeaturesWelcomeSkipButtonDe._(_root);
 }
 
 // Path: utils.domain
@@ -374,6 +540,46 @@ class _TranslationsFeaturesAccountCreateTermsItemDe extends TranslationsFeatures
 	@override String get label => 'Ich stimme den Nutzungsbedingungen zu';
 }
 
+// Path: features.assessment.header
+class _TranslationsFeaturesAssessmentHeaderDe extends TranslationsFeaturesAssessmentHeaderEn {
+	_TranslationsFeaturesAssessmentHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get axisStress => 'Stressreaktion';
+	@override String get axisSleep => 'Ruhe & Schlaf';
+	@override String get axisSelf => 'Selbstbeziehung';
+	@override String get axisFocus => 'Fokus & Durchhalten';
+	@override String get axisRelations => 'Beziehungen';
+	@override String get axisBody => 'Körperwahrnehmung';
+}
+
+// Path: features.assessment.footer
+class _TranslationsFeaturesAssessmentFooterDe extends TranslationsFeaturesAssessmentFooterEn {
+	_TranslationsFeaturesAssessmentFooterDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Es gibt keine richtigen Antworten.';
+}
+
+// Path: features.assessment.likert
+class _TranslationsFeaturesAssessmentLikertDe extends TranslationsFeaturesAssessmentLikertEn {
+	_TranslationsFeaturesAssessmentLikertDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get disagree => 'Stimme nicht zu';
+	@override String get agree => 'Stimme zu';
+	@override String get hint => 'Tippe einen Kreis zum Antworten';
+	@override String get stronglyDisagree => 'Stimme gar nicht zu';
+	@override String get neutral => 'Neutral';
+	@override String get stronglyAgree => 'Stimme voll zu';
+}
+
 // Path: features.auth.loginButton
 class _TranslationsFeaturesAuthLoginButtonDe extends TranslationsFeaturesAuthLoginButtonEn {
 	_TranslationsFeaturesAuthLoginButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
@@ -441,8 +647,122 @@ class _TranslationsFeaturesLaunchpadBottomNavigationBarDe extends TranslationsFe
 	final TranslationsDe _root; // ignore: unused_field
 
 	// Translations
+	@override String get today => 'Heute';
+	@override String get library => 'Bibliothek';
+	@override String get profile => 'Profil';
 	@override String get home => 'Start';
 	@override String get settings => 'Einstellungen';
+}
+
+// Path: features.library.header
+class _TranslationsFeaturesLibraryHeaderDe extends TranslationsFeaturesLibraryHeaderEn {
+	_TranslationsFeaturesLibraryHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Bibliothek';
+	@override String get title => 'Was brauchst du heute?';
+}
+
+// Path: features.library.filterAll
+class _TranslationsFeaturesLibraryFilterAllDe extends TranslationsFeaturesLibraryFilterAllEn {
+	_TranslationsFeaturesLibraryFilterAllDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Alle';
+}
+
+// Path: features.library.filterStress
+class _TranslationsFeaturesLibraryFilterStressDe extends TranslationsFeaturesLibraryFilterStressEn {
+	_TranslationsFeaturesLibraryFilterStressDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Stress';
+}
+
+// Path: features.library.filterSleep
+class _TranslationsFeaturesLibraryFilterSleepDe extends TranslationsFeaturesLibraryFilterSleepEn {
+	_TranslationsFeaturesLibraryFilterSleepDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Schlaf';
+}
+
+// Path: features.library.filterSelf
+class _TranslationsFeaturesLibraryFilterSelfDe extends TranslationsFeaturesLibraryFilterSelfEn {
+	_TranslationsFeaturesLibraryFilterSelfDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Selbst';
+}
+
+// Path: features.library.filterRelations
+class _TranslationsFeaturesLibraryFilterRelationsDe extends TranslationsFeaturesLibraryFilterRelationsEn {
+	_TranslationsFeaturesLibraryFilterRelationsDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Beziehung';
+}
+
+// Path: features.library.filterFocus
+class _TranslationsFeaturesLibraryFilterFocusDe extends TranslationsFeaturesLibraryFilterFocusEn {
+	_TranslationsFeaturesLibraryFilterFocusDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Fokus';
+}
+
+// Path: features.library.filterBody
+class _TranslationsFeaturesLibraryFilterBodyDe extends TranslationsFeaturesLibraryFilterBodyEn {
+	_TranslationsFeaturesLibraryFilterBodyDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Körper';
+}
+
+// Path: features.library.todayPick
+class _TranslationsFeaturesLibraryTodayPickDe extends TranslationsFeaturesLibraryTodayPickEn {
+	_TranslationsFeaturesLibraryTodayPickDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get badge => 'Heute empfohlen';
+}
+
+// Path: features.library.freeBadge
+class _TranslationsFeaturesLibraryFreeBadgeDe extends TranslationsFeaturesLibraryFreeBadgeEn {
+	_TranslationsFeaturesLibraryFreeBadgeDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Kostenlos';
+}
+
+// Path: features.library.allSessions
+class _TranslationsFeaturesLibraryAllSessionsDe extends TranslationsFeaturesLibraryAllSessionsEn {
+	_TranslationsFeaturesLibraryAllSessionsDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Alle Sitzungen';
 }
 
 // Path: features.login.appleButton
@@ -644,6 +964,428 @@ class _TranslationsFeaturesPasswordResetHelpPromptDe extends TranslationsFeature
 
 	// Translations
 	@override String get text => 'Benötigen Sie weitere Hilfe?';
+}
+
+// Path: features.paywall.header
+class _TranslationsFeaturesPaywallHeaderDe extends TranslationsFeaturesPaywallHeaderEn {
+	_TranslationsFeaturesPaywallHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Die ganze Bibliothek freischalten.';
+	@override String get body => 'Über 30 Sitzungen aus zwölf Jahren therapeutischer Praxis. Jede Woche neue Inhalte.';
+}
+
+// Path: features.paywall.annualPlan
+class _TranslationsFeaturesPaywallAnnualPlanDe extends TranslationsFeaturesPaywallAnnualPlanEn {
+	_TranslationsFeaturesPaywallAnnualPlanDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Jahresabo';
+	@override String get badge => 'Beste Wahl';
+}
+
+// Path: features.paywall.singlePlan
+class _TranslationsFeaturesPaywallSinglePlanDe extends TranslationsFeaturesPaywallSinglePlanEn {
+	_TranslationsFeaturesPaywallSinglePlanDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Einzelne Sitzung';
+	@override String get sub => 'Lebenslanger Zugang';
+}
+
+// Path: features.paywall.feature1
+class _TranslationsFeaturesPaywallFeature1De extends TranslationsFeaturesPaywallFeature1En {
+	_TranslationsFeaturesPaywallFeature1De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Über 30 Hypnose-Sitzungen';
+}
+
+// Path: features.paywall.feature2
+class _TranslationsFeaturesPaywallFeature2De extends TranslationsFeaturesPaywallFeature2En {
+	_TranslationsFeaturesPaywallFeature2De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Auch offline anhören';
+}
+
+// Path: features.paywall.feature3
+class _TranslationsFeaturesPaywallFeature3De extends TranslationsFeaturesPaywallFeature3En {
+	_TranslationsFeaturesPaywallFeature3De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'KI-empfohlen, basierend auf deinem Profil';
+}
+
+// Path: features.paywall.feature4
+class _TranslationsFeaturesPaywallFeature4De extends TranslationsFeaturesPaywallFeature4En {
+	_TranslationsFeaturesPaywallFeature4De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Jederzeit kündbar';
+}
+
+// Path: features.paywall.subscribeButton
+class _TranslationsFeaturesPaywallSubscribeButtonDe extends TranslationsFeaturesPaywallSubscribeButtonEn {
+	_TranslationsFeaturesPaywallSubscribeButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Jetzt abonnieren';
+}
+
+// Path: features.paywall.redeemButton
+class _TranslationsFeaturesPaywallRedeemButtonDe extends TranslationsFeaturesPaywallRedeemButtonEn {
+	_TranslationsFeaturesPaywallRedeemButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Code einlösen';
+}
+
+// Path: features.player.nowPlaying
+class _TranslationsFeaturesPlayerNowPlayingDe extends TranslationsFeaturesPlayerNowPlayingEn {
+	_TranslationsFeaturesPlayerNowPlayingDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Sitzung läuft';
+}
+
+// Path: features.profile.header
+class _TranslationsFeaturesProfileHeaderDe extends TranslationsFeaturesProfileHeaderEn {
+	_TranslationsFeaturesProfileHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Profil';
+	@override String get name => 'Anna M.';
+	@override String get email => 'anna@example.com';
+}
+
+// Path: features.profile.yourProfile
+class _TranslationsFeaturesProfileYourProfileDe extends TranslationsFeaturesProfileYourProfileEn {
+	_TranslationsFeaturesProfileYourProfileDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Dein Profil';
+}
+
+// Path: features.profile.redoButton
+class _TranslationsFeaturesProfileRedoButtonDe extends TranslationsFeaturesProfileRedoButtonEn {
+	_TranslationsFeaturesProfileRedoButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Erneut machen';
+}
+
+// Path: features.profile.savedRow
+class _TranslationsFeaturesProfileSavedRowDe extends TranslationsFeaturesProfileSavedRowEn {
+	_TranslationsFeaturesProfileSavedRowDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Gemerkt';
+}
+
+// Path: features.profile.offlineRow
+class _TranslationsFeaturesProfileOfflineRowDe extends TranslationsFeaturesProfileOfflineRowEn {
+	_TranslationsFeaturesProfileOfflineRowDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Offline';
+}
+
+// Path: features.profile.languageRow
+class _TranslationsFeaturesProfileLanguageRowDe extends TranslationsFeaturesProfileLanguageRowEn {
+	_TranslationsFeaturesProfileLanguageRowDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Sprache';
+}
+
+// Path: features.profile.privacyRow
+class _TranslationsFeaturesProfilePrivacyRowDe extends TranslationsFeaturesProfilePrivacyRowEn {
+	_TranslationsFeaturesProfilePrivacyRowDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Datenschutz';
+}
+
+// Path: features.profile.settingsRow
+class _TranslationsFeaturesProfileSettingsRowDe extends TranslationsFeaturesProfileSettingsRowEn {
+	_TranslationsFeaturesProfileSettingsRowDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Einstellungen';
+}
+
+// Path: features.profile.footer
+class _TranslationsFeaturesProfileFooterDe extends TranslationsFeaturesProfileFooterEn {
+	_TranslationsFeaturesProfileFooterDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Eine Praxis von Anna Reiter. © 2026.';
+}
+
+// Path: features.results.header
+class _TranslationsFeaturesResultsHeaderDe extends TranslationsFeaturesResultsHeaderEn {
+	_TranslationsFeaturesResultsHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Dein Profil';
+	@override String get title => 'Du trägst viel.\nLass uns leichter werden.';
+}
+
+// Path: features.results.strengths
+class _TranslationsFeaturesResultsStrengthsDe extends TranslationsFeaturesResultsStrengthsEn {
+	_TranslationsFeaturesResultsStrengthsDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Stärken';
+}
+
+// Path: features.results.growth
+class _TranslationsFeaturesResultsGrowthDe extends TranslationsFeaturesResultsGrowthEn {
+	_TranslationsFeaturesResultsGrowthDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Wachstumsfelder';
+}
+
+// Path: features.results.recommended
+class _TranslationsFeaturesResultsRecommendedDe extends TranslationsFeaturesResultsRecommendedEn {
+	_TranslationsFeaturesResultsRecommendedDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Empfohlen für dich';
+}
+
+// Path: features.results.continueButton
+class _TranslationsFeaturesResultsContinueButtonDe extends TranslationsFeaturesResultsContinueButtonEn {
+	_TranslationsFeaturesResultsContinueButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Zur Bibliothek';
+}
+
+// Path: features.results.savePdfButton
+class _TranslationsFeaturesResultsSavePdfButtonDe extends TranslationsFeaturesResultsSavePdfButtonEn {
+	_TranslationsFeaturesResultsSavePdfButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Profil als PDF speichern';
+}
+
+// Path: features.safetyBlocked.header
+class _TranslationsFeaturesSafetyBlockedHeaderDe extends TranslationsFeaturesSafetyBlockedHeaderEn {
+	_TranslationsFeaturesSafetyBlockedHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Was du gerade durchmachst, verdient mehr als eine App.';
+	@override String get body => 'Aufgrund deiner Antworten empfehlen wir, dich an eine Person zu wenden, die dich direkt unterstützen kann.';
+}
+
+// Path: features.safetyBlocked.acuteHelp
+class _TranslationsFeaturesSafetyBlockedAcuteHelpDe extends TranslationsFeaturesSafetyBlockedAcuteHelpEn {
+	_TranslationsFeaturesSafetyBlockedAcuteHelpDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Akute Hilfe';
+}
+
+// Path: features.safetyBlocked.contactSeelsorge
+class _TranslationsFeaturesSafetyBlockedContactSeelsorgeDe extends TranslationsFeaturesSafetyBlockedContactSeelsorgeEn {
+	_TranslationsFeaturesSafetyBlockedContactSeelsorgeDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Telefonseelsorge';
+	@override String get sub => '0800 111 0 111 — 24/7, kostenfrei';
+}
+
+// Path: features.safetyBlocked.contactEmergency
+class _TranslationsFeaturesSafetyBlockedContactEmergencyDe extends TranslationsFeaturesSafetyBlockedContactEmergencyEn {
+	_TranslationsFeaturesSafetyBlockedContactEmergencyDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'Notruf';
+	@override String get sub => '112 — bei akuter Gefahr';
+}
+
+// Path: features.safetyBlocked.contactKrisenchat
+class _TranslationsFeaturesSafetyBlockedContactKrisenchatDe extends TranslationsFeaturesSafetyBlockedContactKrisenchatEn {
+	_TranslationsFeaturesSafetyBlockedContactKrisenchatDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get label => 'krisenchat.de';
+	@override String get sub => 'Chat-Beratung, kostenlos';
+}
+
+// Path: features.safetyBlocked.backButton
+class _TranslationsFeaturesSafetyBlockedBackButtonDe extends TranslationsFeaturesSafetyBlockedBackButtonEn {
+	_TranslationsFeaturesSafetyBlockedBackButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Zurück';
+}
+
+// Path: features.safetyCheck.header
+class _TranslationsFeaturesSafetyCheckHeaderDe extends TranslationsFeaturesSafetyCheckHeaderEn {
+	_TranslationsFeaturesSafetyCheckHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Bevor wir beginnen';
+	@override String get title => 'Eine kurze Sicherheitsabfrage.';
+	@override String get body => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte fünf kurze Fragen.';
+}
+
+// Path: features.safetyCheck.question1
+class _TranslationsFeaturesSafetyCheckQuestion1De extends TranslationsFeaturesSafetyCheckQuestion1En {
+	_TranslationsFeaturesSafetyCheckQuestion1De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Hast du eine Diagnose von Epilepsie oder Anfälle in der Vorgeschichte?';
+}
+
+// Path: features.safetyCheck.question2
+class _TranslationsFeaturesSafetyCheckQuestion2De extends TranslationsFeaturesSafetyCheckQuestion2En {
+	_TranslationsFeaturesSafetyCheckQuestion2De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Hattest du Psychosen, dissoziative Störungen oder schwere unbehandelte psychische Erkrankungen?';
+}
+
+// Path: features.safetyCheck.question3
+class _TranslationsFeaturesSafetyCheckQuestion3De extends TranslationsFeaturesSafetyCheckQuestion3En {
+	_TranslationsFeaturesSafetyCheckQuestion3De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Hast du derzeit Gedanken an Selbstverletzung oder Suizid?';
+}
+
+// Path: features.safetyCheck.question4
+class _TranslationsFeaturesSafetyCheckQuestion4De extends TranslationsFeaturesSafetyCheckQuestion4En {
+	_TranslationsFeaturesSafetyCheckQuestion4De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Bist du schwanger oder in den ersten Wochen nach der Geburt?';
+}
+
+// Path: features.safetyCheck.question5
+class _TranslationsFeaturesSafetyCheckQuestion5De extends TranslationsFeaturesSafetyCheckQuestion5En {
+	_TranslationsFeaturesSafetyCheckQuestion5De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Wirst du derzeit für eine schwere medizinische oder psychiatrische Erkrankung behandelt?';
+}
+
+// Path: features.safetyCheck.yesButton
+class _TranslationsFeaturesSafetyCheckYesButtonDe extends TranslationsFeaturesSafetyCheckYesButtonEn {
+	_TranslationsFeaturesSafetyCheckYesButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Ja';
+}
+
+// Path: features.safetyCheck.noButton
+class _TranslationsFeaturesSafetyCheckNoButtonDe extends TranslationsFeaturesSafetyCheckNoButtonEn {
+	_TranslationsFeaturesSafetyCheckNoButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Nein';
+}
+
+// Path: features.safetyCheck.confirmButton
+class _TranslationsFeaturesSafetyCheckConfirmButtonDe extends TranslationsFeaturesSafetyCheckConfirmButtonEn {
+	_TranslationsFeaturesSafetyCheckConfirmButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Bestätigen';
+}
+
+// Path: features.safetyCheck.footer
+class _TranslationsFeaturesSafetyCheckFooterDe extends TranslationsFeaturesSafetyCheckFooterEn {
+	_TranslationsFeaturesSafetyCheckFooterDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Diese Antworten werden nur lokal gespeichert.';
 }
 
 // Path: features.settings.appSection
@@ -868,6 +1610,61 @@ class _TranslationsFeaturesSignUpPasswordPasswordFieldDe extends TranslationsFea
 	@override String get label => 'Passwort';
 }
 
+// Path: features.today.header
+class _TranslationsFeaturesTodayHeaderDe extends TranslationsFeaturesTodayHeaderEn {
+	_TranslationsFeaturesTodayHeaderDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get greeting => 'Guten Abend, Anna';
+	@override String get tagline => 'Wenige Minuten für dich.';
+}
+
+// Path: features.today.assessmentBanner
+class _TranslationsFeaturesTodayAssessmentBannerDe extends TranslationsFeaturesTodayAssessmentBannerEn {
+	_TranslationsFeaturesTodayAssessmentBannerDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Mach den 5-Minuten-Test';
+	@override String get subtitle => 'Persönliche Empfehlungen freischalten';
+}
+
+// Path: features.today.featuredCard
+class _TranslationsFeaturesTodayFeaturedCardDe extends TranslationsFeaturesTodayFeaturedCardEn {
+	_TranslationsFeaturesTodayFeaturedCardDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get badge => 'Beginne hier · kostenlos';
+	@override String get listenButton => 'Anhören';
+}
+
+// Path: features.today.aiRecLabel
+class _TranslationsFeaturesTodayAiRecLabelDe extends TranslationsFeaturesTodayAiRecLabelEn {
+	_TranslationsFeaturesTodayAiRecLabelDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Für dich heute';
+}
+
+// Path: features.today.practiceNote
+class _TranslationsFeaturesTodayPracticeNoteDe extends TranslationsFeaturesTodayPracticeNoteEn {
+	_TranslationsFeaturesTodayPracticeNoteDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Vom Praxisteam';
+	@override String get quote => 'Drei Minuten Atmen vor dem Schlafen verändern oft mehr als eine Stunde Grübeln.';
+	@override String get author => '— Anna Reiter, M.Sc.';
+}
+
 // Path: features.verifyEmail.body
 class _TranslationsFeaturesVerifyEmailBodyDe extends TranslationsFeaturesVerifyEmailBodyEn {
 	_TranslationsFeaturesVerifyEmailBodyDe._(TranslationsDe root) : this._root = root, super.internal(root);
@@ -897,6 +1694,72 @@ class _TranslationsFeaturesVerifyEmailSendButtonDe extends TranslationsFeaturesV
 
 	// Translations
 	@override String get label => 'Verifizierungs-E-Mail senden';
+}
+
+// Path: features.welcome.slide1
+class _TranslationsFeaturesWelcomeSlide1De extends TranslationsFeaturesWelcomeSlide1En {
+	_TranslationsFeaturesWelcomeSlide1De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Eine Praxis von Anna Reiter';
+	@override String get title => 'Hypnose, ohne Esoterik.';
+	@override String get body => 'Audiogeführte Sitzungen aus zwölf Jahren therapeutischer Arbeit. Für ruhigere Tage, leichtere Nächte, klarere Beziehungen.';
+}
+
+// Path: features.welcome.slide2
+class _TranslationsFeaturesWelcomeSlide2De extends TranslationsFeaturesWelcomeSlide2En {
+	_TranslationsFeaturesWelcomeSlide2De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'In drei Schritten';
+	@override String get title => 'Ein kurzer Test.\nDann Sitzungen,\ndie zu dir passen.';
+	@override String get body => '20 Fragen, etwa fünf Minuten. Du erhältst ein Profil mit Stärken und Wachstumsfeldern — in Alltagssprache, ohne Etiketten.';
+}
+
+// Path: features.welcome.slide3
+class _TranslationsFeaturesWelcomeSlide3De extends TranslationsFeaturesWelcomeSlide3En {
+	_TranslationsFeaturesWelcomeSlide3De._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get eyebrow => 'Sicher und privat';
+	@override String get title => 'Was du teilst,\nbleibt bei dir.';
+	@override String get body => 'GDPR-konform, in Deutschland gehostet. Keine Werbung, kein Tracking. Die erste Sitzung ist kostenlos.';
+}
+
+// Path: features.welcome.continueButton
+class _TranslationsFeaturesWelcomeContinueButtonDe extends TranslationsFeaturesWelcomeContinueButtonEn {
+	_TranslationsFeaturesWelcomeContinueButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Weiter';
+}
+
+// Path: features.welcome.beginButton
+class _TranslationsFeaturesWelcomeBeginButtonDe extends TranslationsFeaturesWelcomeBeginButtonEn {
+	_TranslationsFeaturesWelcomeBeginButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Beginnen';
+}
+
+// Path: features.welcome.skipButton
+class _TranslationsFeaturesWelcomeSkipButtonDe extends TranslationsFeaturesWelcomeSkipButtonEn {
+	_TranslationsFeaturesWelcomeSkipButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Überspringen';
 }
 
 // Path: utils.domain.appData
@@ -1012,6 +1875,19 @@ extension on TranslationsDe {
 			'features.accountCreate.requiredBadge.label' => 'Pflichtfeld',
 			'features.accountCreate.termsItem.description' => 'Nutzungsbedingungen lesen',
 			'features.accountCreate.termsItem.label' => 'Ich stimme den Nutzungsbedingungen zu',
+			'features.assessment.header.axisStress' => 'Stressreaktion',
+			'features.assessment.header.axisSleep' => 'Ruhe & Schlaf',
+			'features.assessment.header.axisSelf' => 'Selbstbeziehung',
+			'features.assessment.header.axisFocus' => 'Fokus & Durchhalten',
+			'features.assessment.header.axisRelations' => 'Beziehungen',
+			'features.assessment.header.axisBody' => 'Körperwahrnehmung',
+			'features.assessment.footer.text' => 'Es gibt keine richtigen Antworten.',
+			'features.assessment.likert.disagree' => 'Stimme nicht zu',
+			'features.assessment.likert.agree' => 'Stimme zu',
+			'features.assessment.likert.hint' => 'Tippe einen Kreis zum Antworten',
+			'features.assessment.likert.stronglyDisagree' => 'Stimme gar nicht zu',
+			'features.assessment.likert.neutral' => 'Neutral',
+			'features.assessment.likert.stronglyAgree' => 'Stimme voll zu',
 			'features.auth.loginButton.title' => 'Anmelden',
 			'features.auth.signUpButton.title' => 'Kostenlos registrieren',
 			'features.auth.title.text' => 'Finde deine Ruhe.\n Mit sayko.',
@@ -1020,8 +1896,23 @@ extension on TranslationsDe {
 			'features.deleteAccountConfirm.subtitle' => 'Diese Aktion kann nicht rückgängig gemacht werden. Ihr Konto und alle Daten werden dauerhaft gelöscht.',
 			'features.deleteAccountConfirm.title' => 'Konto löschen?',
 			'features.home.header.title' => 'Start',
+			'features.launchpad.bottomNavigationBar.today' => 'Heute',
+			'features.launchpad.bottomNavigationBar.library' => 'Bibliothek',
+			'features.launchpad.bottomNavigationBar.profile' => 'Profil',
 			'features.launchpad.bottomNavigationBar.home' => 'Start',
 			'features.launchpad.bottomNavigationBar.settings' => 'Einstellungen',
+			'features.library.header.eyebrow' => 'Bibliothek',
+			'features.library.header.title' => 'Was brauchst du heute?',
+			'features.library.filterAll.label' => 'Alle',
+			'features.library.filterStress.label' => 'Stress',
+			'features.library.filterSleep.label' => 'Schlaf',
+			'features.library.filterSelf.label' => 'Selbst',
+			'features.library.filterRelations.label' => 'Beziehung',
+			'features.library.filterFocus.label' => 'Fokus',
+			'features.library.filterBody.label' => 'Körper',
+			'features.library.todayPick.badge' => 'Heute empfohlen',
+			'features.library.freeBadge.label' => 'Kostenlos',
+			'features.library.allSessions.label' => 'Alle Sitzungen',
 			'features.login.appleButton.text' => 'Mit Apple fortfahren',
 			'features.login.dontHaveAnAccount.text' => 'Noch kein Konto?',
 			'features.login.emailButton.text' => 'Mit E-Mail fortfahren',
@@ -1047,6 +1938,59 @@ extension on TranslationsDe {
 			'features.passwordReset.header.title' => 'Passwort zurücksetzen',
 			'features.passwordReset.helpPrompt.text' => 'Benötigen Sie weitere Hilfe?',
 			'features.passwordReset.sendPasswordResetEmailSucceeded' => 'Prüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen',
+			'features.paywall.header.title' => 'Die ganze Bibliothek freischalten.',
+			'features.paywall.header.body' => 'Über 30 Sitzungen aus zwölf Jahren therapeutischer Praxis. Jede Woche neue Inhalte.',
+			'features.paywall.annualPlan.title' => 'Jahresabo',
+			'features.paywall.annualPlan.badge' => 'Beste Wahl',
+			'features.paywall.singlePlan.title' => 'Einzelne Sitzung',
+			'features.paywall.singlePlan.sub' => 'Lebenslanger Zugang',
+			'features.paywall.feature1.label' => 'Über 30 Hypnose-Sitzungen',
+			'features.paywall.feature2.label' => 'Auch offline anhören',
+			'features.paywall.feature3.label' => 'KI-empfohlen, basierend auf deinem Profil',
+			'features.paywall.feature4.label' => 'Jederzeit kündbar',
+			'features.paywall.subscribeButton.text' => 'Jetzt abonnieren',
+			'features.paywall.redeemButton.text' => 'Code einlösen',
+			'features.player.nowPlaying.label' => 'Sitzung läuft',
+			'features.profile.header.eyebrow' => 'Profil',
+			'features.profile.header.name' => 'Anna M.',
+			'features.profile.header.email' => 'anna@example.com',
+			'features.profile.yourProfile.label' => 'Dein Profil',
+			'features.profile.redoButton.text' => 'Erneut machen',
+			'features.profile.savedRow.label' => 'Gemerkt',
+			'features.profile.offlineRow.label' => 'Offline',
+			'features.profile.languageRow.label' => 'Sprache',
+			'features.profile.privacyRow.label' => 'Datenschutz',
+			'features.profile.settingsRow.label' => 'Einstellungen',
+			'features.profile.footer.text' => 'Eine Praxis von Anna Reiter. © 2026.',
+			'features.results.header.eyebrow' => 'Dein Profil',
+			'features.results.header.title' => 'Du trägst viel.\nLass uns leichter werden.',
+			'features.results.strengths.label' => 'Stärken',
+			'features.results.growth.label' => 'Wachstumsfelder',
+			'features.results.recommended.title' => 'Empfohlen für dich',
+			'features.results.continueButton.text' => 'Zur Bibliothek',
+			'features.results.savePdfButton.text' => 'Profil als PDF speichern',
+			'features.safetyBlocked.header.title' => 'Was du gerade durchmachst, verdient mehr als eine App.',
+			'features.safetyBlocked.header.body' => 'Aufgrund deiner Antworten empfehlen wir, dich an eine Person zu wenden, die dich direkt unterstützen kann.',
+			'features.safetyBlocked.acuteHelp.label' => 'Akute Hilfe',
+			'features.safetyBlocked.contactSeelsorge.label' => 'Telefonseelsorge',
+			'features.safetyBlocked.contactSeelsorge.sub' => '0800 111 0 111 — 24/7, kostenfrei',
+			'features.safetyBlocked.contactEmergency.label' => 'Notruf',
+			'features.safetyBlocked.contactEmergency.sub' => '112 — bei akuter Gefahr',
+			'features.safetyBlocked.contactKrisenchat.label' => 'krisenchat.de',
+			'features.safetyBlocked.contactKrisenchat.sub' => 'Chat-Beratung, kostenlos',
+			'features.safetyBlocked.backButton.text' => 'Zurück',
+			'features.safetyCheck.header.eyebrow' => 'Bevor wir beginnen',
+			'features.safetyCheck.header.title' => 'Eine kurze Sicherheitsabfrage.',
+			'features.safetyCheck.header.body' => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte fünf kurze Fragen.',
+			'features.safetyCheck.question1.text' => 'Hast du eine Diagnose von Epilepsie oder Anfälle in der Vorgeschichte?',
+			'features.safetyCheck.question2.text' => 'Hattest du Psychosen, dissoziative Störungen oder schwere unbehandelte psychische Erkrankungen?',
+			'features.safetyCheck.question3.text' => 'Hast du derzeit Gedanken an Selbstverletzung oder Suizid?',
+			'features.safetyCheck.question4.text' => 'Bist du schwanger oder in den ersten Wochen nach der Geburt?',
+			'features.safetyCheck.question5.text' => 'Wirst du derzeit für eine schwere medizinische oder psychiatrische Erkrankung behandelt?',
+			'features.safetyCheck.yesButton.text' => 'Ja',
+			'features.safetyCheck.noButton.text' => 'Nein',
+			'features.safetyCheck.confirmButton.text' => 'Bestätigen',
+			'features.safetyCheck.footer.text' => 'Diese Antworten werden nur lokal gespeichert.',
 			'features.settings.appSection.title' => 'App',
 			'features.settings.appSectionTileAppearance.title' => 'Darstellung',
 			'features.settings.appSectionTileSystemLanguage.title' => 'Sprache',
@@ -1072,11 +2016,33 @@ extension on TranslationsDe {
 			'features.signUpPassword.passwordButton.label' => 'Weiter',
 			'features.signUpPassword.passwordField.description' => 'Wählen Sie ein sicheres Passwort.',
 			'features.signUpPassword.passwordField.label' => 'Passwort',
+			'features.today.header.greeting' => 'Guten Abend, Anna',
+			'features.today.header.tagline' => 'Wenige Minuten für dich.',
+			'features.today.assessmentBanner.title' => 'Mach den 5-Minuten-Test',
+			'features.today.assessmentBanner.subtitle' => 'Persönliche Empfehlungen freischalten',
+			'features.today.featuredCard.badge' => 'Beginne hier · kostenlos',
+			'features.today.featuredCard.listenButton' => 'Anhören',
+			'features.today.aiRecLabel.text' => 'Für dich heute',
+			'features.today.practiceNote.eyebrow' => 'Vom Praxisteam',
+			'features.today.practiceNote.quote' => 'Drei Minuten Atmen vor dem Schlafen verändern oft mehr als eine Stunde Grübeln.',
+			'features.today.practiceNote.author' => '— Anna Reiter, M.Sc.',
 			'features.verifyEmail.body.description' => 'Wir haben Ihnen einen Bestätigungslink per E-Mail geschickt. Klicken Sie auf den Link, um Ihr Konto zu bestätigen und fortzufahren.',
 			'features.verifyEmail.body.title' => 'Prüfen Sie Ihren Posteingang',
 			'features.verifyEmail.header.title' => 'E-Mail bestätigen',
 			'features.verifyEmail.sendButton.label' => 'Verifizierungs-E-Mail senden',
 			'features.verifyEmail.sendVerifyEmailFailed' => 'Verifizierungs-E-Mail konnte nicht gesendet werden',
+			'features.welcome.slide1.eyebrow' => 'Eine Praxis von Anna Reiter',
+			'features.welcome.slide1.title' => 'Hypnose, ohne Esoterik.',
+			'features.welcome.slide1.body' => 'Audiogeführte Sitzungen aus zwölf Jahren therapeutischer Arbeit. Für ruhigere Tage, leichtere Nächte, klarere Beziehungen.',
+			'features.welcome.slide2.eyebrow' => 'In drei Schritten',
+			'features.welcome.slide2.title' => 'Ein kurzer Test.\nDann Sitzungen,\ndie zu dir passen.',
+			'features.welcome.slide2.body' => '20 Fragen, etwa fünf Minuten. Du erhältst ein Profil mit Stärken und Wachstumsfeldern — in Alltagssprache, ohne Etiketten.',
+			'features.welcome.slide3.eyebrow' => 'Sicher und privat',
+			'features.welcome.slide3.title' => 'Was du teilst,\nbleibt bei dir.',
+			'features.welcome.slide3.body' => 'GDPR-konform, in Deutschland gehostet. Keine Werbung, kein Tracking. Die erste Sitzung ist kostenlos.',
+			'features.welcome.continueButton.text' => 'Weiter',
+			'features.welcome.beginButton.text' => 'Beginnen',
+			'features.welcome.skipButton.text' => 'Überspringen',
 			'utils.domain.appData.appearance.dark.description' => 'Dunkles Design verwenden',
 			'utils.domain.appData.appearance.dark.name' => 'Dunkel',
 			'utils.domain.appData.appearance.light.description' => 'Helles Design verwenden',
