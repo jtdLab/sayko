@@ -1,4 +1,3 @@
-import 'package:sayko/core/provider.dart';
 import 'package:sayko/core/wouter.dart';
 import 'package:sayko/features/app/app.dart';
 import 'package:sayko/i18n/i18n.dart';

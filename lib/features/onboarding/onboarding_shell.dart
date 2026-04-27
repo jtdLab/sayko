@@ -9,20 +9,22 @@ class OnboardingShell extends HookWidget {
       childPad: false,
       child: WouterPage(
         routes: {
-          '/welcome': BlocProvider(
+          // Keys must be prefixes of [WouterState.fullPath] (e.g. /onboarding/…),
+          // not segments relative to /onboarding, or [WouterPage] never maps URL → page index.
+          '/onboarding/welcome': BlocProvider(
             create: (_) => WelcomeCubit(),
             child: const WelcomePage(),
           ),
-          '/safety-check': BlocProvider(
+          '/onboarding/safety-check': BlocProvider(
             create: (_) => SafetyCheckCubit(),
             child: const SafetyCheckPage(),
           ),
-          '/safety-blocked': const SafetyBlockedPage(),
-          '/assessment': BlocProvider(
+          '/onboarding/safety-blocked': const SafetyBlockedPage(),
+          '/onboarding/assessment': BlocProvider(
             create: (_) => AssessmentCubit(),
             child: const AssessmentPage(),
           ),
-          '/results': const ResultsPage(),
+          '/onboarding/results': const ResultsPage(),
         },
         builder: (context, controller, pages) =>
             PageView(controller: controller, children: pages),

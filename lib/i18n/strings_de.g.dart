@@ -1283,7 +1283,7 @@ class _TranslationsFeaturesSafetyBlockedBackButtonDe extends TranslationsFeature
 	final TranslationsDe _root; // ignore: unused_field
 
 	// Translations
-	@override String get text => 'Zurück';
+	@override String get text => 'Sicherheitsfragen überprüfen';
 }
 
 // Path: features.safetyCheck.header
@@ -1978,7 +1978,7 @@ extension on TranslationsDe {
 			'features.safetyBlocked.contactEmergency.sub' => '112 — bei akuter Gefahr',
 			'features.safetyBlocked.contactKrisenchat.label' => 'krisenchat.de',
 			'features.safetyBlocked.contactKrisenchat.sub' => 'Chat-Beratung, kostenlos',
-			'features.safetyBlocked.backButton.text' => 'Zurück',
+			'features.safetyBlocked.backButton.text' => 'Sicherheitsfragen überprüfen',
 			'features.safetyCheck.header.eyebrow' => 'Bevor wir beginnen',
 			'features.safetyCheck.header.title' => 'Eine kurze Sicherheitsabfrage.',
 			'features.safetyCheck.header.body' => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte fünf kurze Fragen.',

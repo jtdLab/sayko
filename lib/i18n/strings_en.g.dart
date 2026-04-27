@@ -1515,8 +1515,8 @@ class TranslationsFeaturesSafetyBlockedBackButtonEn {
 
 	// Translations
 
-	/// en: 'Back'
-	String get text => 'Back';
+	/// en: 'Review safety answers'
+	String get text => 'Review safety answers';
 }
 
 // Path: features.safetyCheck.header
@@ -2355,7 +2355,7 @@ extension on Translations {
 			'features.safetyBlocked.contactEmergency.sub' => '112 — for acute danger',
 			'features.safetyBlocked.contactKrisenchat.label' => 'krisenchat.de',
 			'features.safetyBlocked.contactKrisenchat.sub' => 'Chat counseling, free',
-			'features.safetyBlocked.backButton.text' => 'Back',
+			'features.safetyBlocked.backButton.text' => 'Review safety answers',
 			'features.safetyCheck.header.eyebrow' => 'Before we begin',
 			'features.safetyCheck.header.title' => 'A short safety check.',
 			'features.safetyCheck.header.body' => 'Hypnosis is safe for most people, but not all. Please answer five short questions.',

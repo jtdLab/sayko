@@ -53,3 +53,5 @@ test-results
 config-development.json
 config-production.json
 config-staging.json
+
+.design
