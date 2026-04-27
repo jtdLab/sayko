@@ -15,7 +15,9 @@ class AppShell extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final cubit = context.read<AppCubit>();
-    final locale = context.locale;
+    final locale = SaykoLaunchConfig.devicePreviewEnabled
+        ? (DevicePreview.locale(context) ?? context.locale)
+        : context.locale;
 
     final appearance = useBlocSelector(
       cubit,

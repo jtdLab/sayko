@@ -179,11 +179,20 @@ abstract class SaykoApp extends StatelessWidget {
   }
 
   Widget _builder(FThemeData theme, Widget child) {
+    final material = theme.toApproximateMaterialTheme();
     return Theme(
-      data: theme.toApproximateMaterialTheme(),
-      child: FTheme(
-        data: theme,
-        child: FToaster(child: child),
+      data: material,
+      child: Builder(
+        builder: (context) {
+          Widget wrapped = FTheme(
+            data: theme,
+            child: FToaster(child: child),
+          );
+          if (SaykoLaunchConfig.devicePreviewEnabled) {
+            wrapped = DevicePreview.appBuilder(context, wrapped);
+          }
+          return wrapped;
+        },
       ),
     );
   }

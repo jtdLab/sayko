@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:device_preview/device_preview.dart';
 import 'package:sayko/core/bloc/bloc.dart';
 import 'package:sayko/core/flutter_native_splash.dart';
 import 'package:sayko/core/lockd.dart';
@@ -12,17 +13,18 @@ import 'package:sayko/features/account_create/account_create.dart';
 import 'package:sayko/features/auth/auth.dart';
 import 'package:sayko/features/launchpad/launchpad.dart';
 import 'package:sayko/features/login/login.dart';
-import 'package:sayko/features/onboarding/onboarding.dart';
-import 'package:sayko/features/player/player.dart';
 import 'package:sayko/features/login_password/login_password.dart';
 import 'package:sayko/features/not_found/not_found.dart';
+import 'package:sayko/features/onboarding/onboarding.dart';
 import 'package:sayko/features/password_reset/password_reset.dart';
+import 'package:sayko/features/player/player.dart';
 import 'package:sayko/features/settings_appearance/settings_appearance.dart';
 import 'package:sayko/features/settings_system_language/settings_system_language.dart';
 import 'package:sayko/features/sign_up/sign_up.dart';
 import 'package:sayko/features/sign_up_password/sign_up_password.dart';
 import 'package:sayko/features/verify_email/verify_email.dart';
 import 'package:sayko/i18n/i18n.dart';
+import 'package:sayko/sayko_launch_config.dart';
 import 'package:sayko/ui/ui.dart' hide Feedback;
 
 part 'app.lockd.dart';

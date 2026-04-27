@@ -142,35 +142,6 @@ abstract class SaykoImage extends StatelessWidget {
     Key? key,
   }) = _SaykoImageMemory;
 
-  /// A widget for displaying images from a file.
-  ///
-  /// This allows you to load and display raster-based images
-  /// (e.g., PNG, JPG, GIF) directly from a file.
-  const factory SaykoImage.file(
-    io.File file, {
-    double scale,
-    ImageFrameBuilder? frameBuilder,
-    ImageErrorWidgetBuilder? errorBuilder,
-    String? semanticLabel,
-    bool excludeFromSemantics,
-    double? width,
-    double? height,
-    Color? color,
-    Animation<double>? opacity,
-    BlendMode? colorBlendMode,
-    BoxFit? fit,
-    AlignmentGeometry alignment,
-    ImageRepeat repeat,
-    Rect? centerSlice,
-    bool matchTextDirection,
-    bool gaplessPlayback,
-    bool isAntiAlias,
-    FilterQuality filterQuality,
-    int? cacheWidth,
-    int? cacheHeight,
-    Key? key,
-  }) = _SaykoImageFile;
-
   const SaykoImage._({
     this.frameBuilder,
     this.loadingBuilder,
@@ -769,8 +740,7 @@ class _SaykoImageNetwork extends SaykoImage {
   @override
   Widget build(BuildContext context) {
     // TODO(UI): Workaround as cached network images fail widget tests
-    final isTest = io.Platform.environment.containsKey('FLUTTER_TEST');
-    if (isTest) {
+    if (false) {
       return Container(
         color: const Color(0x00ffffff),
         width: width,
@@ -848,68 +818,6 @@ class _SaykoImageMemory extends SaykoImage {
   Widget build(BuildContext context) {
     return Image.memory(
       bytes,
-      scale: scale,
-      frameBuilder: frameBuilder,
-      errorBuilder: errorBuilder,
-      semanticLabel: semanticLabel,
-      excludeFromSemantics: excludeFromSemantics,
-      width: width,
-      height: height,
-      color: color,
-      opacity: opacity,
-      colorBlendMode: colorBlendMode,
-      fit: fit,
-      alignment: alignment,
-      repeat: repeat,
-      centerSlice: centerSlice,
-      matchTextDirection: matchTextDirection,
-      gaplessPlayback: gaplessPlayback,
-      isAntiAlias: isAntiAlias,
-      filterQuality: filterQuality,
-      cacheWidth: cacheWidth,
-      cacheHeight: cacheHeight,
-    );
-  }
-}
-
-class _SaykoImageFile extends SaykoImage {
-  const _SaykoImageFile(
-    this.file, {
-    this.scale = 1.0,
-    super.frameBuilder,
-    super.errorBuilder,
-    super.semanticLabel,
-    super.excludeFromSemantics = false,
-    super.width,
-    super.height,
-    super.color,
-    super.opacity,
-    super.colorBlendMode,
-    super.fit,
-    super.alignment = Alignment.center,
-    super.repeat = ImageRepeat.noRepeat,
-    super.centerSlice,
-    super.matchTextDirection = false,
-    super.gaplessPlayback = false,
-    super.isAntiAlias = false,
-    super.filterQuality = FilterQuality.medium,
-    this.cacheWidth,
-    this.cacheHeight,
-    super.key,
-  }) : super._();
-
-  final io.File file;
-
-  final double scale;
-
-  final int? cacheWidth;
-
-  final int? cacheHeight;
-
-  @override
-  Widget build(BuildContext context) {
-    return Image.file(
-      file,
       scale: scale,
       frameBuilder: frameBuilder,
       errorBuilder: errorBuilder,
