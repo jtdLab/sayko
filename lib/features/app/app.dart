@@ -12,6 +12,8 @@ import 'package:sayko/features/account_create/account_create.dart';
 import 'package:sayko/features/auth/auth.dart';
 import 'package:sayko/features/launchpad/launchpad.dart';
 import 'package:sayko/features/login/login.dart';
+import 'package:sayko/features/onboarding/onboarding.dart';
+import 'package:sayko/features/player/player.dart';
 import 'package:sayko/features/login_password/login_password.dart';
 import 'package:sayko/features/not_found/not_found.dart';
 import 'package:sayko/features/password_reset/password_reset.dart';

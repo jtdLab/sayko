@@ -13,6 +13,8 @@ class AppView extends HookWidget {
       AppStatus.authenticated => const AppViewAuthenticated(),
       AppStatus.authenticatedAndAccountCreated =>
         const AppViewAuthenticatedAndAccountCreated(),
+      AppStatus.authenticatedAndAccountCreatedAndOnboarded =>
+        const AppViewAuthenticatedAndAccountCreatedAndOnboarded(),
       AppStatus.authenticatedAndVerified =>
         const AppViewAuthenticatedAndVerified(),
       AppStatus.unauthenticated => const AppViewUnauthenticated(),
@@ -62,8 +64,23 @@ class AppViewAuthenticatedAndAccountCreated extends HookWidget {
   Widget build(BuildContext context) {
     return WouterSwitch(
       routes: {
-        '/auth/:_(.*)': (context, args) => const Reset(to: ['/home']),
-        '/account-create': (context, args) => const Reset(to: ['/home']),
+        '/onboarding/:_(.*)': (context, args) => const OnboardingShell(),
+      },
+      fallback: const Reset(to: ['/onboarding/welcome']),
+    );
+  }
+}
+
+class AppViewAuthenticatedAndAccountCreatedAndOnboarded extends HookWidget {
+  const AppViewAuthenticatedAndAccountCreatedAndOnboarded({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return WouterSwitch(
+      routes: {
+        '/auth/:_(.*)': (context, args) => const Reset(to: ['/today']),
+        '/account-create': (context, args) => const Reset(to: ['/today']),
+        '/onboarding/:_(.*)': (context, args) => const Reset(to: ['/today']),
       },
       fallback: PlatformWouter(
         routes: {
@@ -74,7 +91,12 @@ class AppViewAuthenticatedAndAccountCreated extends HookWidget {
           ),
           '/settings-system-language': (context, args) =>
               const SettingsSystemLanguagePage(),
-          '/:_(home|settings)': (context, args) => const LaunchpadShell(),
+          '/player': (context, args) => BlocProvider(
+            create: (_) => PlayerCubit(),
+            child: const PlayerPage(),
+          ),
+          '/:_(today|library|profile|home|settings)': (context, args) =>
+              const LaunchpadShell(),
           '/:_(.*)': (context, args) => const NotFoundPage(),
         },
       ),

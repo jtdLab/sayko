@@ -28,11 +28,21 @@ WouterSelector get appWouter {
 WouterRouterDelegate _routerDelegate(BuildContext context) {
   final cubit = context.read<AppCubit>();
   final status = cubit.state.status;
+  final userData = context.read<UserDataRepository>().read();
+  final onboardingPath = switch (userData.onboardingStep) {
+    null => '/onboarding/welcome',
+    0 => '/onboarding/welcome',
+    1 => '/onboarding/safety-check',
+    2 => '/onboarding/safety-blocked',
+    3 => '/onboarding/assessment',
+    _ => '/onboarding/results',
+  };
   final initialPath = switch (status) {
     AppStatus.unauthenticated => '/auth',
     AppStatus.authenticated => '/verify-email',
     AppStatus.authenticatedAndVerified => '/account-create',
-    AppStatus.authenticatedAndAccountCreated => '/home',
+    AppStatus.authenticatedAndAccountCreated => onboardingPath,
+    AppStatus.authenticatedAndAccountCreatedAndOnboarded => '/today',
   };
   return WouterRouterDelegate(
     initial: initialPath,

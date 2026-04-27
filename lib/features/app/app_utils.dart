@@ -4,6 +4,8 @@ extension on UserData {
   bool get isEmpty {
     return this == const UserData(displayName: '');
   }
+
+  bool get isOnboarded => onboardingStep == onboardingLastStep;
 }
 
 AppStatus _status(User? Function() userFn, UserData Function() userDataFn) {
@@ -12,6 +14,8 @@ AppStatus _status(User? Function() userFn, UserData Function() userDataFn) {
   return switch (user) {
     final User user when user.isVerified && userData.isEmpty =>
       AppStatus.authenticatedAndVerified,
+    final User user when user.isVerified && userData.isOnboarded =>
+      AppStatus.authenticatedAndAccountCreatedAndOnboarded,
     final User user when user.isVerified =>
       AppStatus.authenticatedAndAccountCreated,
     User() => AppStatus.authenticated,
