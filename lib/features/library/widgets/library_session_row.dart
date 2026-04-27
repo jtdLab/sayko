@@ -23,7 +23,11 @@ class LibrarySessionRow extends HookWidget {
         padding: const EdgeInsets.symmetric(vertical: 8),
         child: Row(
           children: [
-            SaykoSessionArt(tone: tone, size: 56),
+            SaykoSessionArt(
+              tone: tone,
+              size: 56,
+              coverImageUrl: SaykoSessionCoverUrls.byTitle(title),
+            ),
             const SaykoGap.oneAndHalf(),
             Expanded(
               child: Column(

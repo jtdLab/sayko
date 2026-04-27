@@ -19,6 +19,9 @@ class TodayFeaturedCard extends HookWidget {
               child: SaykoSessionArt(
                 tone: SaykoTone.sand,
                 borderRadius: 0,
+                coverImageUrl: SaykoSessionCoverUrls.byTitle(
+                  'A Quiet Place to Land',
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(14),
                   child: Align(

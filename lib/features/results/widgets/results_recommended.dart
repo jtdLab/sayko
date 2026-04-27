@@ -50,7 +50,11 @@ class ResultsRecommended extends HookWidget {
                 padding: const EdgeInsets.all(12),
                 child: Row(
                   children: [
-                    SaykoSessionArt(tone: item.$3, size: 60),
+                    SaykoSessionArt(
+                      tone: item.$3,
+                      size: 60,
+                      coverImageUrl: SaykoSessionCoverUrls.byTitle(item.$1),
+                    ),
                     const SaykoGap.oneAndHalf(),
                     Expanded(
                       child: Column(

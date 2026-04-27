@@ -44,7 +44,11 @@ class TodayRecommendations extends HookWidget {
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(
               children: [
-                SaykoSessionArt(tone: s.$3, size: 52),
+                SaykoSessionArt(
+                  tone: s.$3,
+                  size: 52,
+                  coverImageUrl: SaykoSessionCoverUrls.byTitle(s.$1),
+                ),
                 const SaykoGap.oneAndHalf(),
                 Expanded(
                   child: Column(

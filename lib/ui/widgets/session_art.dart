@@ -3,6 +3,7 @@ part of '../ui.dart';
 class SaykoSessionArt extends StatelessWidget {
   const SaykoSessionArt({
     required this.tone,
+    this.coverImageUrl,
     this.size,
     this.borderRadius = 12,
     this.child,
@@ -10,6 +11,7 @@ class SaykoSessionArt extends StatelessWidget {
   });
 
   final SaykoTone tone;
+  final String? coverImageUrl;
   final double? size;
   final double borderRadius;
   final Widget? child;
@@ -17,6 +19,9 @@ class SaykoSessionArt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final palette = SaykoTonePalette.of(tone);
+    final dpr = MediaQuery.of(context).devicePixelRatio;
+    final cacheExtent = size != null ? (size! * dpr).round() : null;
+    final hasCover = coverImageUrl != null && coverImageUrl!.isNotEmpty;
     final art = ClipRRect(
       borderRadius: BorderRadius.circular(borderRadius),
       child: Stack(
@@ -31,16 +36,43 @@ class SaykoSessionArt extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
-            top: -30,
-            left: -30,
-            child: _Blob(color: const Color(0x59FFFFFF), size: 130),
-          ),
-          Positioned(
-            bottom: -20,
-            right: -30,
-            child: _Blob(color: const Color(0x14000000), size: 100),
-          ),
+          if (hasCover)
+            Positioned.fill(
+              child: SaykoImage.network(
+                imageUrl: coverImageUrl!,
+                fit: BoxFit.cover,
+                memCacheWidth: cacheExtent,
+                memCacheHeight: cacheExtent,
+                errorWidget: (_, _, _) => const SizedBox.shrink(),
+              ),
+            ),
+          if (hasCover)
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      const Color(0x00000000),
+                      palette.end.withValues(alpha: 0.45),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          if (!hasCover) ...[
+            const Positioned(
+              top: -30,
+              left: -30,
+              child: _Blob(color: Color(0x59FFFFFF), size: 130),
+            ),
+            const Positioned(
+              bottom: -20,
+              right: -30,
+              child: _Blob(color: Color(0x14000000), size: 100),
+            ),
+          ],
           if (child != null) child!,
         ],
       ),
