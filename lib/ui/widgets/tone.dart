@@ -2,6 +2,13 @@ part of '../ui.dart';
 
 enum SaykoTone { sand, dusk, sage, rose }
 
+SaykoTone saykoToneFromKey(String key) {
+  for (final v in SaykoTone.values) {
+    if (v.name == key) return v;
+  }
+  return SaykoTone.sand;
+}
+
 class SaykoTonePalette {
   const SaykoTonePalette(this.start, this.end);
   final Color start;

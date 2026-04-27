@@ -2,23 +2,21 @@ part of '../library.dart';
 
 class LibrarySessionRow extends HookWidget {
   const LibrarySessionRow({
-    required this.title,
-    required this.subtitle,
-    required this.tone,
-    required this.locked,
+    required this.session,
+    required this.onTap,
     super.key,
   });
 
-  final String title;
-  final String subtitle;
-  final SaykoTone tone;
-  final bool locked;
+  final ListeningSession session;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     final theme = context.theme;
+    final tone = saykoToneFromKey(session.toneKey);
+    final locked = session.requiresSubscription;
     return GestureDetector(
-      onTap: () => context.pushPlayerFromLibrary(),
+      onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8),
         child: Row(
@@ -26,7 +24,7 @@ class LibrarySessionRow extends HookWidget {
             SaykoSessionArt(
               tone: tone,
               size: 56,
-              coverImageUrl: SaykoSessionCoverUrls.byTitle(title),
+              coverImageUrl: session.coverImageUrl,
             ),
             const SaykoGap.oneAndHalf(),
             Expanded(
@@ -34,14 +32,14 @@ class LibrarySessionRow extends HookWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    title,
+                    session.title,
                     style: theme.typography.sm.copyWith(
                       fontWeight: FontWeight.w500,
                     ),
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    subtitle,
+                    session.subtitle,
                     style: theme.typography.xs.copyWith(
                       color: theme.colors.mutedForeground,
                     ),

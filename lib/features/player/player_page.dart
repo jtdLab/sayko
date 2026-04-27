@@ -5,6 +5,13 @@ class PlayerPage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const FScaffold(childPad: false, child: PlayerBody());
+    final qp = useQueryParameters();
+    final sessionId = qp['session'] ?? SessionCatalog.quietPlace.id;
+    final session = SessionCatalog.resolve(sessionId);
+    return BlocProvider(
+      key: ValueKey<String>(sessionId),
+      create: (_) => PlayerCubit(session: session),
+      child: const FScaffold(childPad: false, child: PlayerBody()),
+    );
   }
 }

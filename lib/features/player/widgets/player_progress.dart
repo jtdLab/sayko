@@ -23,13 +23,13 @@ class PlayerProgress extends HookWidget {
             Text(
               formatPlayerTime(seconds),
               style: theme.typography.xs.copyWith(
-                color: theme.colors.mutedForeground,
+                color: theme.colors.foreground,
               ),
             ),
             Text(
               '−${formatPlayerTime(total - seconds)}',
               style: theme.typography.xs.copyWith(
-                color: theme.colors.mutedForeground,
+                color: theme.colors.foreground,
               ),
             ),
           ],

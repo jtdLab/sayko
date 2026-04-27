@@ -7,6 +7,8 @@ class TodayFeaturedCard extends HookWidget {
   Widget build(BuildContext context) {
     final i18n = context.i18n.features.today.featuredCard;
     final theme = context.theme;
+    const session = SessionCatalog.quietPlace;
+    final tone = saykoToneFromKey(session.toneKey);
 
     return GestureDetector(
       onTap: () => context.pushPlayerFromToday(),
@@ -17,11 +19,9 @@ class TodayFeaturedCard extends HookWidget {
             SizedBox(
               height: 180,
               child: SaykoSessionArt(
-                tone: SaykoTone.sand,
+                tone: tone,
                 borderRadius: 0,
-                coverImageUrl: SaykoSessionCoverUrls.byTitle(
-                  'A Quiet Place to Land',
-                ),
+                coverImageUrl: session.coverImageUrl,
                 child: Padding(
                   padding: const EdgeInsets.all(14),
                   child: Align(
@@ -53,14 +53,14 @@ class TodayFeaturedCard extends HookWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SaykoSerifText(
-                    'A Quiet Place to Land',
+                  SaykoSerifText(
+                    session.title,
                     size: 22,
                     height: 1.2,
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Grounding for racing minds · 28 min',
+                    session.subtitle,
                     style: theme.typography.sm.copyWith(
                       color: theme.colors.mutedForeground,
                     ),

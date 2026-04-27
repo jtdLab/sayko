@@ -20,6 +20,14 @@ mixin _$PlayerState {
 
   int get total;
 
+  String get title;
+
+  String get subtitle;
+
+  String? get coverImageUrl;
+
+  String get toneKey;
+
   _PlayerStateCopyWith get copyWith => _PlayerStateCopyWith(this);
 }
 
@@ -36,11 +44,19 @@ class _PlayerStateCopyWith {
     Object? playing = _unset,
     Object? seconds = _unset,
     Object? total = _unset,
+    Object? title = _unset,
+    Object? subtitle = _unset,
+    Object? coverImageUrl = _unset,
+    Object? toneKey = _unset,
   }) {
     return PlayerState(
       playing: _pick<bool>(playing, _v.playing),
       seconds: _pick<int>(seconds, _v.seconds),
       total: _pick<int>(total, _v.total),
+      title: _pick<String>(title, _v.title),
+      subtitle: _pick<String>(subtitle, _v.subtitle),
+      coverImageUrl: _pick<String?>(coverImageUrl, _v.coverImageUrl),
+      toneKey: _pick<String>(toneKey, _v.toneKey),
     );
   }
 }
@@ -50,6 +66,10 @@ class _PlayerState with _$PlayerState implements PlayerState {
     required this.playing,
     required this.seconds,
     required this.total,
+    required this.title,
+    required this.subtitle,
+    this.coverImageUrl,
+    required this.toneKey,
   });
 
   @override
@@ -62,6 +82,18 @@ class _PlayerState with _$PlayerState implements PlayerState {
   final int total;
 
   @override
+  final String title;
+
+  @override
+  final String subtitle;
+
+  @override
+  final String? coverImageUrl;
+
+  @override
+  final String toneKey;
+
+  @override
   String toString() =>
-      'PlayerState(playing: $playing, seconds: $seconds, total: $total)';
+      'PlayerState(playing: $playing, seconds: $seconds, total: $total, title: $title, subtitle: $subtitle, coverImageUrl: $coverImageUrl, toneKey: $toneKey)';
 }

@@ -5,8 +5,15 @@ class PlayerBody extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cubit = context.read<PlayerCubit>();
+    final (toneKey, coverUrl) = useBlocSelector(
+      cubit,
+      (PlayerState state) => (state.toneKey, state.coverImageUrl),
+    );
+    final tone = saykoToneFromKey(toneKey);
     return SaykoAbstractScape(
-      tone: SaykoTone.sand,
+      tone: tone,
+      coverImageUrl: coverUrl,
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),

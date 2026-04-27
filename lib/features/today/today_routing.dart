@@ -2,6 +2,6 @@ part of 'today.dart';
 
 extension TodayRoutingBuildContextX on BuildContext {
   Future<void> pushPlayerFromToday() {
-    return wouter.actions.push<void>('/player');
+    return pushPlayerSession(SessionCatalog.quietPlace.id);
   }
 }

@@ -91,10 +91,7 @@ class AppViewAuthenticatedAndAccountCreatedAndOnboarded extends HookWidget {
           ),
           '/settings-system-language': (context, args) =>
               const SettingsSystemLanguagePage(),
-          '/player': (context, args) => BlocProvider(
-            create: (_) => PlayerCubit(),
-            child: const PlayerPage(),
-          ),
+          '/player': (context, args) => const PlayerPage(),
           '/profile': (context, args) => const Reset(to: ['/settings']),
           '/home': (context, args) => const Reset(to: ['/today']),
           '/:_(today|library|settings)': (context, args) =>

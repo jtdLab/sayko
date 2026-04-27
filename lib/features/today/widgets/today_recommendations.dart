@@ -35,47 +35,54 @@ class TodayRecommendations extends HookWidget {
           ],
         ),
         const SaykoGap.one(),
-        for (final s in const [
-          ('Releasing the Day', 'Rest & sleep · 32 min', SaykoTone.dusk),
-          ('The Inner Friend', 'Self-relation · 26 min', SaykoTone.sage),
-          ('Soft Focus', 'Focus · 30 min', SaykoTone.sand),
-        ])
+        for (final session in SessionCatalog.todayRecommendations)
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 6),
-            child: Row(
-              children: [
-                SaykoSessionArt(
-                  tone: s.$3,
-                  size: 52,
-                  coverImageUrl: SaykoSessionCoverUrls.byTitle(s.$1),
-                ),
-                const SaykoGap.oneAndHalf(),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        s.$1,
-                        style: theme.typography.sm.copyWith(
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        s.$2,
-                        style: theme.typography.xs.copyWith(
-                          color: theme.colors.mutedForeground,
-                        ),
-                      ),
-                    ],
+            child: GestureDetector(
+              onTap: () {
+                if (session.requiresSubscription) {
+                  context.showPaywallSheet();
+                } else {
+                  context.pushPlayerSession(session.id);
+                }
+              },
+              behavior: HitTestBehavior.opaque,
+              child: Row(
+                children: [
+                  SaykoSessionArt(
+                    tone: saykoToneFromKey(session.toneKey),
+                    size: 52,
+                    coverImageUrl: session.coverImageUrl,
                   ),
-                ),
-                Icon(
-                  FIcons.lock,
-                  size: 13,
-                  color: theme.colors.mutedForeground,
-                ),
-              ],
+                  const SaykoGap.oneAndHalf(),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          session.title,
+                          style: theme.typography.sm.copyWith(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          session.subtitle,
+                          style: theme.typography.xs.copyWith(
+                            color: theme.colors.mutedForeground,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  if (session.requiresSubscription)
+                    Icon(
+                      FIcons.lock,
+                      size: 13,
+                      color: theme.colors.mutedForeground,
+                    ),
+                ],
+              ),
             ),
           ),
       ],

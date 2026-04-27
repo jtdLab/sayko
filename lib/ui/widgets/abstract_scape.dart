@@ -1,14 +1,22 @@
 part of '../ui.dart';
 
 class SaykoAbstractScape extends StatelessWidget {
-  const SaykoAbstractScape({required this.tone, required this.child, super.key});
+  const SaykoAbstractScape({
+    required this.tone,
+    required this.child,
+    this.coverImageUrl,
+    super.key,
+  });
 
   final SaykoTone tone;
   final Widget child;
+  final String? coverImageUrl;
 
   @override
   Widget build(BuildContext context) {
     final palette = SaykoTonePalette.of(tone);
+    final hasCover =
+        coverImageUrl != null && coverImageUrl!.isNotEmpty;
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -21,6 +29,29 @@ class SaykoAbstractScape extends StatelessWidget {
             ),
           ),
         ),
+        if (hasCover)
+          Positioned.fill(
+            child: SaykoImage.network(
+              imageUrl: coverImageUrl!,
+              fit: BoxFit.cover,
+              errorWidget: (_, _, _) => const SizedBox.shrink(),
+            ),
+          ),
+        if (hasCover)
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    const Color(0x66000000),
+                    palette.end.withValues(alpha: 0.92),
+                  ],
+                ),
+              ),
+            ),
+          ),
         Positioned(
           top: -80,
           left: -100,

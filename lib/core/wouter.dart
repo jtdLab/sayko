@@ -116,3 +116,11 @@ class _Navigator extends StatelessWidget {
     };
   }
 }
+
+extension PlayerSessionNavigation on BuildContext {
+  Future<void> pushPlayerSession(String sessionId) {
+    return wouter.actions.push<void>(
+      '/player?session=${Uri.encodeQueryComponent(sessionId)}',
+    );
+  }
+}

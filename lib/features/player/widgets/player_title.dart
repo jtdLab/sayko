@@ -5,23 +5,29 @@ class PlayerTitle extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cubit = context.read<PlayerCubit>();
     final i18n = context.i18n.features.player;
     final theme = context.theme;
+
+    final (title, subtitle) = useBlocSelector(
+      cubit,
+      (PlayerState state) => (state.title, state.subtitle),
+    );
 
     return Column(
       children: [
         SaykoEyebrow(i18n.nowPlaying.label),
         const SaykoGap.one(),
-        const SaykoSerifText(
-          'A Quiet Place to Land',
+        SaykoSerifText(
+          title,
           size: 28,
           height: 1.2,
         ),
         const SizedBox(height: 4),
         Text(
-          'Grounding for racing minds',
+          subtitle,
           style: theme.typography.sm.copyWith(
-            color: theme.colors.mutedForeground,
+            color: theme.colors.foreground,
           ),
         ),
       ],

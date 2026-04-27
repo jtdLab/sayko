@@ -38,45 +38,57 @@ class ResultsRecommended extends HookWidget {
           ],
         ),
         const SaykoGap.one(),
-        for (final item in const [
-          ('A Quiet Place to Land', 'Stress · 28 min', SaykoTone.sand),
-          ('Releasing the Day', 'Sleep · 32 min', SaykoTone.dusk),
-          ('The Inner Friend', 'Self · 26 min', SaykoTone.sage),
-        ])
+        for (final session in SessionCatalog.resultsRecommendations)
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
-            child: FCard(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Row(
-                  children: [
-                    SaykoSessionArt(
-                      tone: item.$3,
-                      size: 60,
-                      coverImageUrl: SaykoSessionCoverUrls.byTitle(item.$1),
-                    ),
-                    const SaykoGap.oneAndHalf(),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            item.$1,
-                            style: theme.typography.sm.copyWith(
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            item.$2,
-                            style: theme.typography.xs.copyWith(
-                              color: theme.colors.mutedForeground,
-                            ),
-                          ),
-                        ],
+            child: GestureDetector(
+              onTap: () {
+                if (session.requiresSubscription) {
+                  context.showPaywallSheet();
+                } else {
+                  context.pushPlayerSession(session.id);
+                }
+              },
+              behavior: HitTestBehavior.opaque,
+              child: FCard(
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Row(
+                    children: [
+                      SaykoSessionArt(
+                        tone: saykoToneFromKey(session.toneKey),
+                        size: 60,
+                        coverImageUrl: session.coverImageUrl,
                       ),
-                    ),
-                  ],
+                      const SaykoGap.oneAndHalf(),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              session.title,
+                              style: theme.typography.sm.copyWith(
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              session.subtitle,
+                              style: theme.typography.xs.copyWith(
+                                color: theme.colors.mutedForeground,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      if (session.requiresSubscription)
+                        Icon(
+                          FIcons.lock,
+                          size: 13,
+                          color: theme.colors.mutedForeground,
+                        ),
+                    ],
+                  ),
                 ),
               ),
             ),

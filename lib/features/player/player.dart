@@ -1,9 +1,11 @@
 import 'dart:async';
 
+import 'package:just_audio/just_audio.dart';
 import 'package:sayko/core/bloc/bloc.dart';
 import 'package:sayko/core/lockd.dart';
 import 'package:sayko/core/provider.dart';
 import 'package:sayko/core/wouter.dart';
+import 'package:sayko/domain/session/session.dart';
 import 'package:sayko/i18n/i18n.dart';
 import 'package:sayko/ui/ui.dart';
 

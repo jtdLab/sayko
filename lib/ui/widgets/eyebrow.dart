@@ -12,7 +12,7 @@ class SaykoEyebrow extends StatelessWidget {
     return Text(
       text.toUpperCase(),
       style: theme.typography.xs.copyWith(
-        color: color ?? theme.colors.mutedForeground,
+        color: color ?? theme.colors.foreground,
         letterSpacing: 1.2,
         fontWeight: FontWeight.w600,
       ),
