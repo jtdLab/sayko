@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:marionette_flutter/marionette_flutter.dart';
 import 'package:sayko/app_info.dart';
 import 'package:sayko/core/bloc/bloc.dart';
 import 'package:sayko/core/flutter_native_splash.dart';
@@ -21,7 +22,9 @@ Future<void> main() async {
 }
 
 Future<void> setupApp() async {
-  final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  final widgetsBinding = kDebugMode
+      ? MarionetteBinding.ensureInitialized()
+      : WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   await useDeviceLocale();
