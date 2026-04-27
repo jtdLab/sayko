@@ -199,6 +199,9 @@
       "sendPasswordResetEmailSucceeded": "Prüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen"
     },
     "paywall": {
+      "sheetTitle": {
+        "text": "Premium"
+      },
       "header": {
         "title": "Die ganze Bibliothek freischalten.",
         "body": "Über 30 Sitzungen aus zwölf Jahren therapeutischer Praxis. Jede Woche neue Inhalte."

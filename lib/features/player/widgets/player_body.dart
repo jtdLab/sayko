@@ -36,36 +36,68 @@ class PlayerBody extends HookWidget {
   }
 }
 
-class _BreathRing extends StatelessWidget {
+class _BreathRing extends HookWidget {
   const _BreathRing();
+
+  static const _outer = 240.0;
+  static const _inner = 130.0;
 
   @override
   Widget build(BuildContext context) {
+    final controller = useAnimationController(
+      duration: const Duration(milliseconds: 5000),
+    );
+    useEffect(() {
+      controller.repeat(reverse: true);
+      return null;
+    }, [controller]);
+
     return SizedBox(
-      width: 240,
-      height: 240,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: const Color(0xB3FFFFFF),
-                width: 1.5,
+      width: _outer,
+      height: _outer,
+      child: AnimatedBuilder(
+        animation: controller,
+        builder: (context, child) {
+          final t = Curves.easeInOutCubic.transform(controller.value);
+          final outerScale = 1.0 + 0.055 * t;
+          final innerScale = 1.0 + 0.11 * t;
+          final innerFillA = 0.22 + 0.12 * t;
+          final innerBorderA = 0.35 + 0.15 * t;
+          return Stack(
+            alignment: Alignment.center,
+            clipBehavior: Clip.none,
+            children: [
+              Transform.scale(
+                scale: outerScale,
+                child: Container(
+                  width: _outer,
+                  height: _outer,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: const Color(0xB3FFFFFF),
+                      width: 1.5,
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ),
-          Container(
-            width: 130,
-            height: 130,
-            decoration: BoxDecoration(
-              color: const Color(0x40FFFFFF),
-              shape: BoxShape.circle,
-              border: Border.all(color: const Color(0x66FFFFFF)),
-            ),
-          ),
-        ],
+              Transform.scale(
+                scale: innerScale,
+                child: Container(
+                  width: _inner,
+                  height: _inner,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 255, 255, innerFillA),
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Color.fromRGBO(255, 255, 255, innerBorderA),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          );
+        },
       ),
     );
   }

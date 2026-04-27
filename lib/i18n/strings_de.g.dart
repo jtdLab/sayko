@@ -259,6 +259,7 @@ class _TranslationsFeaturesPaywallDe extends TranslationsFeaturesPaywallEn {
 	final TranslationsDe _root; // ignore: unused_field
 
 	// Translations
+	@override late final _TranslationsFeaturesPaywallSheetTitleDe sheetTitle = _TranslationsFeaturesPaywallSheetTitleDe._(_root);
 	@override late final _TranslationsFeaturesPaywallHeaderDe header = _TranslationsFeaturesPaywallHeaderDe._(_root);
 	@override late final _TranslationsFeaturesPaywallAnnualPlanDe annualPlan = _TranslationsFeaturesPaywallAnnualPlanDe._(_root);
 	@override late final _TranslationsFeaturesPaywallSinglePlanDe singlePlan = _TranslationsFeaturesPaywallSinglePlanDe._(_root);
@@ -976,6 +977,16 @@ class _TranslationsFeaturesPasswordResetHelpPromptDe extends TranslationsFeature
 
 	// Translations
 	@override String get text => 'Benötigen Sie weitere Hilfe?';
+}
+
+// Path: features.paywall.sheetTitle
+class _TranslationsFeaturesPaywallSheetTitleDe extends TranslationsFeaturesPaywallSheetTitleEn {
+	_TranslationsFeaturesPaywallSheetTitleDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Premium';
 }
 
 // Path: features.paywall.header
@@ -1961,6 +1972,7 @@ extension on TranslationsDe {
 			'features.passwordReset.header.title' => 'Passwort zurücksetzen',
 			'features.passwordReset.helpPrompt.text' => 'Benötigen Sie weitere Hilfe?',
 			'features.passwordReset.sendPasswordResetEmailSucceeded' => 'Prüfen Sie Ihren Posteingang auf den Link zum Zurücksetzen',
+			'features.paywall.sheetTitle.text' => 'Premium',
 			'features.paywall.header.title' => 'Die ganze Bibliothek freischalten.',
 			'features.paywall.header.body' => 'Über 30 Sitzungen aus zwölf Jahren therapeutischer Praxis. Jede Woche neue Inhalte.',
 			'features.paywall.annualPlan.title' => 'Jahresabo',

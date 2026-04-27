@@ -277,6 +277,7 @@ class TranslationsFeaturesPaywallEn {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
+	late final TranslationsFeaturesPaywallSheetTitleEn sheetTitle = TranslationsFeaturesPaywallSheetTitleEn.internal(_root);
 	late final TranslationsFeaturesPaywallHeaderEn header = TranslationsFeaturesPaywallHeaderEn.internal(_root);
 	late final TranslationsFeaturesPaywallAnnualPlanEn annualPlan = TranslationsFeaturesPaywallAnnualPlanEn.internal(_root);
 	late final TranslationsFeaturesPaywallSinglePlanEn singlePlan = TranslationsFeaturesPaywallSinglePlanEn.internal(_root);
@@ -1129,6 +1130,18 @@ class TranslationsFeaturesPasswordResetHelpPromptEn {
 
 	/// en: 'Need more help?'
 	String get text => 'Need more help?';
+}
+
+// Path: features.paywall.sheetTitle
+class TranslationsFeaturesPaywallSheetTitleEn {
+	TranslationsFeaturesPaywallSheetTitleEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Premium'
+	String get text => 'Premium';
 }
 
 // Path: features.paywall.header
@@ -2342,6 +2355,7 @@ extension on Translations {
 			'features.passwordReset.header.title' => 'Reset Password',
 			'features.passwordReset.helpPrompt.text' => 'Need more help?',
 			'features.passwordReset.sendPasswordResetEmailSucceeded' => 'Check your inbox for the password reset link',
+			'features.paywall.sheetTitle.text' => 'Premium',
 			'features.paywall.header.title' => 'Unlock the full library.',
 			'features.paywall.header.body' => 'Over 30 sessions drawn from twelve years of therapeutic practice. New content every week.',
 			'features.paywall.annualPlan.title' => 'Annual',

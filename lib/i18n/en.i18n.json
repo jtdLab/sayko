@@ -199,6 +199,9 @@
       "sendPasswordResetEmailSucceeded": "Check your inbox for the password reset link"
     },
     "paywall": {
+      "sheetTitle": {
+        "text": "Premium"
+      },
       "header": {
         "title": "Unlock the full library.",
         "body": "Over 30 sessions drawn from twelve years of therapeutic practice. New content every week."
