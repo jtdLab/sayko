@@ -10,7 +10,11 @@ class LaunchpadBody extends HookWidget {
     return IndexedStack(
       index: index,
       children: [
-        const HomePage(),
+        const TodayPage(),
+        BlocProvider(
+          create: (context) => LibraryCubit(),
+          child: const LibraryPage(),
+        ),
         BlocProvider(
           create: (context) => SettingsCubit(
             authRepository: context.read(),

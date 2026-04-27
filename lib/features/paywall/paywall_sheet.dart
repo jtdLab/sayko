@@ -5,6 +5,10 @@ class PaywallSheet extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const PaywallBody();
+    final colors = context.theme.colors;
+    return ColoredBox(
+      color: colors.background,
+      child: const PaywallBody(),
+    );
   }
 }

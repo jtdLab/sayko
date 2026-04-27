@@ -10,6 +10,7 @@ class SettingsAppSection extends HookWidget {
     return FTileGroup(
       label: Text(i18n.title),
       children: const [
+        SettingsAppSectionTileSubscription(),
         SettingsAppSectionTileAppearance(),
         SettingsAppSectionTileSystemLanguage(),
       ],

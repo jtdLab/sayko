@@ -95,7 +95,9 @@ class AppViewAuthenticatedAndAccountCreatedAndOnboarded extends HookWidget {
             create: (_) => PlayerCubit(),
             child: const PlayerPage(),
           ),
-          '/:_(today|library|profile|home|settings)': (context, args) =>
+          '/profile': (context, args) => const Reset(to: ['/settings']),
+          '/home': (context, args) => const Reset(to: ['/today']),
+          '/:_(today|library|settings)': (context, args) =>
               const LaunchpadShell(),
           '/:_(.*)': (context, args) => const NotFoundPage(),
         },

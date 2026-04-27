@@ -372,6 +372,7 @@ class TranslationsFeaturesSettingsEn {
 
 	// Translations
 	late final TranslationsFeaturesSettingsAppSectionEn appSection = TranslationsFeaturesSettingsAppSectionEn.internal(_root);
+	late final TranslationsFeaturesSettingsAppSectionTileSubscriptionEn appSectionTileSubscription = TranslationsFeaturesSettingsAppSectionTileSubscriptionEn.internal(_root);
 	late final TranslationsFeaturesSettingsAppSectionTileAppearanceEn appSectionTileAppearance = TranslationsFeaturesSettingsAppSectionTileAppearanceEn.internal(_root);
 	late final TranslationsFeaturesSettingsAppSectionTileSystemLanguageEn appSectionTileSystemLanguage = TranslationsFeaturesSettingsAppSectionTileSystemLanguageEn.internal(_root);
 	late final TranslationsFeaturesSettingsDeleteAccountButtonEn deleteAccountButton = TranslationsFeaturesSettingsDeleteAccountButtonEn.internal(_root);
@@ -1657,6 +1658,18 @@ class TranslationsFeaturesSettingsAppSectionEn {
 	String get title => 'App';
 }
 
+// Path: features.settings.appSectionTileSubscription
+class TranslationsFeaturesSettingsAppSectionTileSubscriptionEn {
+	TranslationsFeaturesSettingsAppSectionTileSubscriptionEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Upgrade plan'
+	String get title => 'Upgrade plan';
+}
+
 // Path: features.settings.appSectionTileAppearance
 class TranslationsFeaturesSettingsAppSectionTileAppearanceEn {
 	TranslationsFeaturesSettingsAppSectionTileAppearanceEn.internal(this._root);
@@ -2369,6 +2382,7 @@ extension on Translations {
 			'features.safetyCheck.confirmButton.text' => 'Confirm',
 			'features.safetyCheck.footer.text' => 'These answers are stored only on your device.',
 			'features.settings.appSection.title' => 'App',
+			'features.settings.appSectionTileSubscription.title' => 'Upgrade plan',
 			'features.settings.appSectionTileAppearance.title' => 'Appearance',
 			'features.settings.appSectionTileSystemLanguage.title' => 'Language',
 			'features.settings.deleteAccountButton.title' => 'Delete Account',

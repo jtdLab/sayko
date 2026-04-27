@@ -346,6 +346,9 @@
       "appSection": {
         "title": "App"
       },
+      "appSectionTileSubscription": {
+        "title": "Upgrade plan"
+      },
       "appSectionTileAppearance": {
         "title": "Appearance"
       },

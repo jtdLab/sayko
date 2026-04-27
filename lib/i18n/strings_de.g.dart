@@ -354,6 +354,7 @@ class _TranslationsFeaturesSettingsDe extends TranslationsFeaturesSettingsEn {
 
 	// Translations
 	@override late final _TranslationsFeaturesSettingsAppSectionDe appSection = _TranslationsFeaturesSettingsAppSectionDe._(_root);
+	@override late final _TranslationsFeaturesSettingsAppSectionTileSubscriptionDe appSectionTileSubscription = _TranslationsFeaturesSettingsAppSectionTileSubscriptionDe._(_root);
 	@override late final _TranslationsFeaturesSettingsAppSectionTileAppearanceDe appSectionTileAppearance = _TranslationsFeaturesSettingsAppSectionTileAppearanceDe._(_root);
 	@override late final _TranslationsFeaturesSettingsAppSectionTileSystemLanguageDe appSectionTileSystemLanguage = _TranslationsFeaturesSettingsAppSectionTileSystemLanguageDe._(_root);
 	@override late final _TranslationsFeaturesSettingsDeleteAccountButtonDe deleteAccountButton = _TranslationsFeaturesSettingsDeleteAccountButtonDe._(_root);
@@ -1398,6 +1399,16 @@ class _TranslationsFeaturesSettingsAppSectionDe extends TranslationsFeaturesSett
 	@override String get title => 'App';
 }
 
+// Path: features.settings.appSectionTileSubscription
+class _TranslationsFeaturesSettingsAppSectionTileSubscriptionDe extends TranslationsFeaturesSettingsAppSectionTileSubscriptionEn {
+	_TranslationsFeaturesSettingsAppSectionTileSubscriptionDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Plan upgraden';
+}
+
 // Path: features.settings.appSectionTileAppearance
 class _TranslationsFeaturesSettingsAppSectionTileAppearanceDe extends TranslationsFeaturesSettingsAppSectionTileAppearanceEn {
 	_TranslationsFeaturesSettingsAppSectionTileAppearanceDe._(TranslationsDe root) : this._root = root, super.internal(root);
@@ -1992,6 +2003,7 @@ extension on TranslationsDe {
 			'features.safetyCheck.confirmButton.text' => 'Bestätigen',
 			'features.safetyCheck.footer.text' => 'Diese Antworten werden nur lokal gespeichert.',
 			'features.settings.appSection.title' => 'App',
+			'features.settings.appSectionTileSubscription.title' => 'Plan upgraden',
 			'features.settings.appSectionTileAppearance.title' => 'Darstellung',
 			'features.settings.appSectionTileSystemLanguage.title' => 'Sprache',
 			'features.settings.deleteAccountButton.title' => 'Konto löschen',
