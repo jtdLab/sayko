@@ -8,7 +8,13 @@ class PaywallSheet extends HookWidget {
     final colors = context.theme.colors;
     return ColoredBox(
       color: colors.background,
-      child: const PaywallBody(),
+      child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(child: PaywallBody()),
+          PaywallStickyFooter(),
+        ],
+      ),
     );
   }
 }

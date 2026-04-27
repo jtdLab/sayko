@@ -29,8 +29,7 @@ class PaywallBody extends HookWidget {
           ),
           const SaykoGap.three(),
           const PaywallFeatureList(),
-          const SaykoGap.three(),
-          const PaywallSubscribeButton(),
+          const SaykoGap.two(),
         ],
       ),
     );
