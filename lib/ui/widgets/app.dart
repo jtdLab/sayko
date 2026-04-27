@@ -18,6 +18,46 @@ extension UiWidgetsAppFThemeDataX on FThemeData {
 
 enum SaykoBreakpoint { mobile, tablet, desktop }
 
+const _saykoColorsLight = FColors(
+  brightness: Brightness.light,
+  systemOverlayStyle: SystemUiOverlayStyle.dark,
+  barrier: Color(0x33000000),
+  background: Color(0xFFFBF8F1),
+  foreground: Color(0xFF2C231C),
+  primary: Color(0xFFB36A3F),
+  primaryForeground: Color(0xFFFFFFFF),
+  secondary: Color(0xFFF4EFE5),
+  secondaryForeground: Color(0xFF2C231C),
+  muted: Color(0xFFF4EFE5),
+  mutedForeground: Color(0xFF6F5F50),
+  destructive: Color(0xFFB54F30),
+  destructiveForeground: Color(0xFFFAFAFA),
+  error: Color(0xFFB54F30),
+  errorForeground: Color(0xFFFAFAFA),
+  card: Color(0xFFFFFFFF),
+  border: Color(0xFFE6DED1),
+);
+
+const _saykoColorsDark = FColors(
+  brightness: Brightness.dark,
+  systemOverlayStyle: SystemUiOverlayStyle.light,
+  barrier: Color(0x7A000000),
+  background: Color(0xFF1F1812),
+  foreground: Color(0xFFF4EFE5),
+  primary: Color(0xFFD88563),
+  primaryForeground: Color(0xFF1F1812),
+  secondary: Color(0xFF36281D),
+  secondaryForeground: Color(0xFFF4EFE5),
+  muted: Color(0xFF36281D),
+  mutedForeground: Color(0xFFA89989),
+  destructive: Color(0xFFDA624C),
+  destructiveForeground: Color(0xFFFAFAFA),
+  error: Color(0xFFDA624C),
+  errorForeground: Color(0xFFFAFAFA),
+  card: Color(0xFF2C231C),
+  border: Color(0x1AFFFFFF),
+);
+
 abstract class SaykoApp extends StatelessWidget {
   const factory SaykoApp({
     required RouterDelegate<Object> routerDelegate,
@@ -130,10 +170,11 @@ abstract class SaykoApp extends StatelessWidget {
       ),
     };
 
-    final baseTheme = switch (brightness) {
-      Brightness.light => FThemes.zinc.light.touch,
-      Brightness.dark => FThemes.zinc.dark.touch,
+    final colors = switch (brightness) {
+      Brightness.light => _saykoColorsLight,
+      Brightness.dark => _saykoColorsDark,
     };
+    final baseTheme = FThemeData(touch: true, colors: colors);
     return baseTheme.copyWith(extensions: [spacings]);
   }
 
