@@ -5,11 +5,8 @@ class SafetyCheckBody extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final i18n = context.i18n.features.safetyCheck;
-    final theme = context.theme;
-
     return ListView(
-      padding: const EdgeInsets.symmetric(vertical: 16),
+      padding: const EdgeInsets.fromLTRB(0, 16, 0, 8),
       children: [
         const SafetyCheckHeader(),
         const SaykoGap.three(),
@@ -17,16 +14,6 @@ class SafetyCheckBody extends HookWidget {
           SafetyCheckQuestionCard(id: id),
           const SaykoGap.one(),
         ],
-        const SaykoGap.two(),
-        const SafetyCheckConfirmButton(),
-        const SaykoGap.two(),
-        Text(
-          i18n.footer.text,
-          textAlign: TextAlign.center,
-          style: theme.typography.xs.copyWith(
-            color: theme.colors.mutedForeground,
-          ),
-        ),
       ],
     );
   }

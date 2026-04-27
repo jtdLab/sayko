@@ -5,8 +5,9 @@ class TodayBody extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    final pad = context.theme.style.pagePadding;
     return ListView(
-      padding: const EdgeInsets.all(24),
+      padding: EdgeInsets.only(top: pad.top, bottom: pad.bottom),
       children: const [
         TodayHeader(),
         SaykoGap.three(),

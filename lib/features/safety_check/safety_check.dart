@@ -14,5 +14,6 @@ part 'safety_check_routing.dart';
 part 'safety_check_utils.dart';
 part 'widgets/safety_check_body.dart';
 part 'widgets/safety_check_confirm_button.dart';
+part 'widgets/safety_check_footer.dart';
 part 'widgets/safety_check_header.dart';
 part 'widgets/safety_check_question_card.dart';

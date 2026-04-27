@@ -5,11 +5,11 @@ class SettingsBody extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    const padding = EdgeInsets.only(bottom: 16);
+    final bottom = context.theme.style.pagePadding.bottom + 12;
 
-    return const SingleChildScrollView(
-      padding: padding,
-      child: Column(
+    return SingleChildScrollView(
+      padding: EdgeInsets.only(bottom: bottom),
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SettingsAppSection(),

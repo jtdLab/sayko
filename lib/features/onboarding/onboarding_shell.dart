@@ -26,8 +26,11 @@ class OnboardingShell extends HookWidget {
           ),
           '/onboarding/results': const ResultsPage(),
         },
-        builder: (context, controller, pages) =>
-            PageView(controller: controller, children: pages),
+        builder: (context, controller, pages) => PageView(
+          controller: controller,
+          physics: const NeverScrollableScrollPhysics(),
+          children: pages,
+        ),
       ),
     );
   }

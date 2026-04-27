@@ -5,6 +5,10 @@ class AssessmentPage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const FScaffold(child: AssessmentBody());
+    return const FScaffold(
+      child: SafeArea(
+        child: AssessmentBody(),
+      ),
+    );
   }
 }

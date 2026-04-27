@@ -36,6 +36,9 @@
       "footer": {
         "text": "There are no right answers."
       },
+      "skipButton": {
+        "text": "Skip"
+      },
       "likert": {
         "disagree": "Disagree",
         "agree": "Agree",

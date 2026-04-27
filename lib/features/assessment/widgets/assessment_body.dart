@@ -27,6 +27,11 @@ class AssessmentBody extends HookWidget {
               color: theme.colors.mutedForeground,
             ),
           ),
+          const SaykoGap.two(),
+          const Align(
+            alignment: Alignment.centerRight,
+            child: AssessmentSkipButton(),
+          ),
         ],
       ),
     );

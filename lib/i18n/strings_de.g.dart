@@ -114,6 +114,7 @@ class _TranslationsFeaturesAssessmentDe extends TranslationsFeaturesAssessmentEn
 	// Translations
 	@override late final _TranslationsFeaturesAssessmentHeaderDe header = _TranslationsFeaturesAssessmentHeaderDe._(_root);
 	@override late final _TranslationsFeaturesAssessmentFooterDe footer = _TranslationsFeaturesAssessmentFooterDe._(_root);
+	@override late final _TranslationsFeaturesAssessmentSkipButtonDe skipButton = _TranslationsFeaturesAssessmentSkipButtonDe._(_root);
 	@override late final _TranslationsFeaturesAssessmentLikertDe likert = _TranslationsFeaturesAssessmentLikertDe._(_root);
 }
 
@@ -564,6 +565,16 @@ class _TranslationsFeaturesAssessmentFooterDe extends TranslationsFeaturesAssess
 
 	// Translations
 	@override String get text => 'Es gibt keine richtigen Antworten.';
+}
+
+// Path: features.assessment.skipButton
+class _TranslationsFeaturesAssessmentSkipButtonDe extends TranslationsFeaturesAssessmentSkipButtonEn {
+	_TranslationsFeaturesAssessmentSkipButtonDe._(TranslationsDe root) : this._root = root, super.internal(root);
+
+	final TranslationsDe _root; // ignore: unused_field
+
+	// Translations
+	@override String get text => 'Überspringen';
 }
 
 // Path: features.assessment.likert
@@ -1893,6 +1904,7 @@ extension on TranslationsDe {
 			'features.assessment.header.axisRelations' => 'Beziehungen',
 			'features.assessment.header.axisBody' => 'Körperwahrnehmung',
 			'features.assessment.footer.text' => 'Es gibt keine richtigen Antworten.',
+			'features.assessment.skipButton.text' => 'Überspringen',
 			'features.assessment.likert.disagree' => 'Stimme nicht zu',
 			'features.assessment.likert.agree' => 'Stimme zu',
 			'features.assessment.likert.hint' => 'Tippe einen Kreis zum Antworten',

@@ -118,6 +118,7 @@ class TranslationsFeaturesAssessmentEn {
 	// Translations
 	late final TranslationsFeaturesAssessmentHeaderEn header = TranslationsFeaturesAssessmentHeaderEn.internal(_root);
 	late final TranslationsFeaturesAssessmentFooterEn footer = TranslationsFeaturesAssessmentFooterEn.internal(_root);
+	late final TranslationsFeaturesAssessmentSkipButtonEn skipButton = TranslationsFeaturesAssessmentSkipButtonEn.internal(_root);
 	late final TranslationsFeaturesAssessmentLikertEn likert = TranslationsFeaturesAssessmentLikertEn.internal(_root);
 }
 
@@ -619,6 +620,18 @@ class TranslationsFeaturesAssessmentFooterEn {
 
 	/// en: 'There are no right answers.'
 	String get text => 'There are no right answers.';
+}
+
+// Path: features.assessment.skipButton
+class TranslationsFeaturesAssessmentSkipButtonEn {
+	TranslationsFeaturesAssessmentSkipButtonEn.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Skip'
+	String get text => 'Skip';
 }
 
 // Path: features.assessment.likert
@@ -2272,6 +2285,7 @@ extension on Translations {
 			'features.assessment.header.axisRelations' => 'Relationships',
 			'features.assessment.header.axisBody' => 'Body awareness',
 			'features.assessment.footer.text' => 'There are no right answers.',
+			'features.assessment.skipButton.text' => 'Skip',
 			'features.assessment.likert.disagree' => 'Disagree',
 			'features.assessment.likert.agree' => 'Agree',
 			'features.assessment.likert.hint' => 'Tap a circle to answer',

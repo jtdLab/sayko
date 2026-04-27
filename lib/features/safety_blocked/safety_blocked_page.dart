@@ -5,6 +5,6 @@ class SafetyBlockedPage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const FScaffold(child: SafetyBlockedBody());
+    return const FScaffold(child: SafeArea(child: SafetyBlockedBody()));
   }
 }

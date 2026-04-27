@@ -9,6 +9,7 @@ class SafetyCheckPage extends HookWidget {
 
     return FScaffold(
       header: FHeader(title: Text(i18n.header.title)),
+      footer: const SafetyCheckFooter(),
       child: const SafetyCheckBody(),
     );
   }

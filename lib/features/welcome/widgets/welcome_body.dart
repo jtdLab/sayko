@@ -19,22 +19,20 @@ class WelcomeBody extends HookWidget {
 
     return SaykoAbstractScape(
       tone: tone,
-      child: SafeArea(
+      child: const SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(28, 12, 28, 32),
+          padding: EdgeInsets.fromLTRB(28, 12, 28, 32),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: const [
-              Align(
-                alignment: Alignment.topRight,
-                child: WelcomeSkipButton(),
-              ),
+            children: [
               Spacer(),
               WelcomeSlide(),
               SaykoGap.three(),
               WelcomeDots(),
               SaykoGap.two(),
               WelcomeContinueButton(),
+              SaykoGap.one(),
+              Center(child: WelcomeSkipButton()),
             ],
           ),
         ),

@@ -27,8 +27,9 @@ class LibraryBody extends HookWidget {
         ? all
         : all.where((s) => s.$3 == filter).toList();
 
+    final pad = context.theme.style.pagePadding;
     return ListView(
-      padding: const EdgeInsets.all(24),
+      padding: EdgeInsets.only(top: pad.top, bottom: pad.bottom),
       children: [
         const LibraryHeader(),
         const SaykoGap.two(),
