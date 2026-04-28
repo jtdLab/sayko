@@ -1,7 +1,7 @@
 part of '../safety_check.dart';
 
-const safetyCheckQuestionCount = 5;
-const _criticalIds = {1, 2, 3};
+const safetyCheckQuestionCount = 2;
+const _criticalIds = {1, 2};
 
 SafetyCheckState _initialState() {
   return const SafetyCheckState(answers: {});

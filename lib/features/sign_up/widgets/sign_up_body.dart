@@ -12,8 +12,7 @@ class SignUpBody extends HookWidget {
     final isWeb = platform == Platform.web;
     final spacings = theme.spacings;
 
-    final showAppleButton = isIos;
-    final showGoogleButton = !isWeb;
+    final showAppleButton = isIos || isWeb;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -26,7 +25,7 @@ class SignUpBody extends HookWidget {
           children: [
             const SignUpEmailButton(),
             if (showAppleButton) const SignUpAppleButton(),
-            if (showGoogleButton) const SignUpGoogleButton(),
+            const SignUpGoogleButton(),
           ],
         ),
         const SaykoGap.four(),

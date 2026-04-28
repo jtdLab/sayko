@@ -33,6 +33,20 @@ class AppShell extends HookWidget {
       Appearance.light => Brightness.light,
       Appearance.dark => Brightness.dark,
     };
+
+    useEffect(() {
+      if (!SaykoLaunchConfig.devicePreviewEnabled) return null;
+      final appLocale = AppLocaleUtils.parseLocaleParts(
+        languageCode: locale.languageCode,
+        scriptCode: locale.scriptCode,
+        countryCode: locale.countryCode,
+      );
+      if (LocaleSettings.currentLocale != appLocale) {
+        LocaleSettings.setLocaleSync(appLocale);
+      }
+      return null;
+    }, [locale]);
+
     final routerDelegate = _useRouterDelegate();
 
     return SaykoApp(

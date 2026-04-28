@@ -10,9 +10,7 @@ class SafetyCheckQuestionCard extends HookWidget {
     return switch (id) {
       1 => q.question1.text,
       2 => q.question2.text,
-      3 => q.question3.text,
-      4 => q.question4.text,
-      _ => q.question5.text,
+      _ => q.question1.text,
     };
   }
 

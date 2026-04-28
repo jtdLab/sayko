@@ -12,8 +12,7 @@ class LoginBody extends HookWidget {
     final isIos = platform == Platform.ios;
     final isWeb = platform == Platform.web;
 
-    final showAppleButton = isIos;
-    final showGoogleButton = !isWeb;
+    final showAppleButton = isIos || isWeb;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -26,7 +25,7 @@ class LoginBody extends HookWidget {
           children: [
             const LoginEmailButton(),
             if (showAppleButton) const LoginAppleButton(),
-            if (showGoogleButton) const LoginGoogleButton(),
+            const LoginGoogleButton(),
           ],
         ),
         const SaykoGap.four(),

@@ -1560,8 +1560,8 @@ class TranslationsFeaturesSafetyCheckHeaderEn {
 	/// en: 'A short safety check.'
 	String get title => 'A short safety check.';
 
-	/// en: 'Hypnosis is safe for most people, but not all. Please answer five short questions.'
-	String get body => 'Hypnosis is safe for most people, but not all. Please answer five short questions.';
+	/// en: 'Hypnosis is safe for most people, but not all. Please answer two short questions.'
+	String get body => 'Hypnosis is safe for most people, but not all. Please answer two short questions.';
 }
 
 // Path: features.safetyCheck.question1
@@ -2399,7 +2399,7 @@ extension on Translations {
 			'features.safetyBlocked.backButton.text' => 'Review safety answers',
 			'features.safetyCheck.header.eyebrow' => 'Before we begin',
 			'features.safetyCheck.header.title' => 'A short safety check.',
-			'features.safetyCheck.header.body' => 'Hypnosis is safe for most people, but not all. Please answer five short questions.',
+			'features.safetyCheck.header.body' => 'Hypnosis is safe for most people, but not all. Please answer two short questions.',
 			'features.safetyCheck.question1.text' => 'Do you have a diagnosis of epilepsy or a history of seizures?',
 			'features.safetyCheck.question2.text' => 'Have you experienced psychosis, dissociative disorders, or severe untreated mental illness?',
 			'features.safetyCheck.question3.text' => 'Are you currently experiencing thoughts of self-harm or suicide?',

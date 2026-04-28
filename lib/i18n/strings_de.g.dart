@@ -1318,7 +1318,7 @@ class _TranslationsFeaturesSafetyCheckHeaderDe extends TranslationsFeaturesSafet
 	// Translations
 	@override String get eyebrow => 'Bevor wir beginnen';
 	@override String get title => 'Eine kurze Sicherheitsabfrage.';
-	@override String get body => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte fünf kurze Fragen.';
+	@override String get body => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte zwei kurze Fragen.';
 }
 
 // Path: features.safetyCheck.question1
@@ -2016,7 +2016,7 @@ extension on TranslationsDe {
 			'features.safetyBlocked.backButton.text' => 'Sicherheitsfragen überprüfen',
 			'features.safetyCheck.header.eyebrow' => 'Bevor wir beginnen',
 			'features.safetyCheck.header.title' => 'Eine kurze Sicherheitsabfrage.',
-			'features.safetyCheck.header.body' => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte fünf kurze Fragen.',
+			'features.safetyCheck.header.body' => 'Hypnose ist sicher für die meisten Menschen, aber nicht für alle. Bitte beantworte zwei kurze Fragen.',
 			'features.safetyCheck.question1.text' => 'Hast du eine Diagnose von Epilepsie oder Anfälle in der Vorgeschichte?',
 			'features.safetyCheck.question2.text' => 'Hattest du Psychosen, dissoziative Störungen oder schwere unbehandelte psychische Erkrankungen?',
 			'features.safetyCheck.question3.text' => 'Hast du derzeit Gedanken an Selbstverletzung oder Suizid?',

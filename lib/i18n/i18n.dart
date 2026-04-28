@@ -1,7 +1,8 @@
 import 'package:sayko/i18n/strings.g.dart';
 import 'package:sayko/ui/ui.dart';
 
-export 'package:sayko/i18n/strings.g.dart' show TranslationProvider;
+export 'package:sayko/i18n/strings.g.dart'
+    show AppLocale, AppLocaleUtils, LocaleSettings, TranslationProvider;
 
 extension I18nBuildContextX on BuildContext {
   Translations get i18n => TranslationProvider.of(this).translations;
